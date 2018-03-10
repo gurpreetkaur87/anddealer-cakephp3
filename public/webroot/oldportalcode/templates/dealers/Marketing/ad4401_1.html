@@ -1,0 +1,28 @@
+<div class="content">
+
+<h1>Marketing Tip </h1>
+
+<p><b><u>Subject: AD-4401 Digital Indicator/Controller</u></b> </p>
+
+<table border="2">
+  <tr>
+    <td>Please note that care must be taken when setting the AD-4401 to carry out accumulation
+    of data, particularly in batching modes. </td>
+  </tr>
+  <tr>
+    <td>If you wish to accumulate data then you must ensure that you do not set function SQF
+    01 to 1 and also set SQF 02 to 1 <b>unless you have also <br>
+    set an upper and lower limit greater than zero</b>. </td>
+  </tr>
+  <tr>
+    <td>The reason is that setting SQF 01 to 1 selects that comparison is done using the
+    internal, A/D, count (1 part in 1,000,000) and setting SQF 02 to 1 selects to accumulate
+    acceptable data only i.e. data which is within the band specified by the upper and lower
+    limits. If you have these settings and also have 0 as the upper and lower limits, then for
+    the accumulation to occur the internal A/D count must exactly match your target weight. It
+    is most unlikely that these conditions will occur - so there will be no accumulation. This
+    is easily fixed by setting values for the upper and lower limits. </td>
+  </tr>
+</table>
+
+</div>

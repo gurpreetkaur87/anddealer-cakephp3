@@ -1,0 +1,37 @@
+<div class="content">
+<h2>Warning: You are about to delete the following user</h2>
+<p>This action cannot be undone!</p>
+<form method="post" action="web.php?p=10001">
+  <input type="hidden" name="m" value="delete"/>
+  <input type="hidden" name="cid" value="{cid}"/>
+  <table class="cap_option" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+      <th colspan="2">Dealer Details</th>
+    </tr>
+    <tr>
+      <td>Dealer Code:</td>
+      <td><input type="text" name="ccustno" value="{ccustno}"/></td>
+    </tr>
+    <tr>
+      <td>First Name:</td>
+      <td><input type="text" name="cfirstname" value="{cfirstname}"/></td>
+    </tr>
+    <tr>
+      <td>Last Name:</td>
+      <td><input type="text" name="clastname" value="{clastname}"/></td>
+    </tr>
+    <tr>
+      <td>Username:</td>
+      <td><input type="text" name="cusername" value="{cusername}"/></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="text" name="cemail" value="{cemail}"/></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Delete This User!"/></td>
+      <td><input type="button" value="Cancel" onclick="history.back();"/></td>
+    </tr>
+  </table>
+</form>
+</div>

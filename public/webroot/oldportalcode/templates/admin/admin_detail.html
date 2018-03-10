@@ -1,0 +1,49 @@
+<div class="content">
+  <h2>Detailed Dealer Information</h2>
+  <table class="cap_option" border="0" cellspacing="0" cellpadding="2">
+<!--    <tr>
+      <th colspan="2">&nbsp;</th>
+    </tr>
+    <tr>-->
+      <th width="100">Dealer Code:</th>
+      <td width="200">{ccustno}</td>
+    <tr>
+    <tr>
+      <th>Username:</th>
+      <td>{cusername}</td>
+    </tr>
+    <tr>
+      <th>Pin Number:</th>
+      <td>{cpassword}</td>
+    </tr>
+    <tr>
+      <th>First Name:</th>
+      <td>{cfirstname}</td>
+    </tr>
+    <tr>
+      <th>Last Name:</th>
+      <td>{clastname}</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td><a href="mailto:{cemail}">{cemail}</a></td>
+    </tr>
+    <tr>
+      <th>Disabled:</th>
+      <td><input type="checkbox" name="iinactive" {iinactive} disabled/></td>
+    </tr>
+    <tr>
+      <th>Last login:</th>
+      <td>{twebaccess}</td>
+    </tr>
+    <tr>
+      <th>Total Logins:</th>
+      <td>{nwebaccess}</td>
+    </tr>
+  </table>
+  <ul>
+    <li><a href="web.php?p=10001&m=resend&cid={cid}">Resend Password Email</a></li>
+    <li><a href="web.php?p=10001&m=edit&c={ccustno}&u={cusername}">Edit this User</a></li>
+    <li><a href="web.php?p=10001">Dealer List</a></li>
+  </ul>
+</div>

@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+<p>Hello {cfirstname},</p>
+
+<p>Welcome to the A&D Mercury Dealer Access Area.</p>
+
+<p>Your account has now been setup and we are pleased to supply your login details.</p>
+
+<p>When accessing the Dealer Section of our website you will use the following details:</p>
+<table cellspacing="1" cellpadding="2">
+  <tr>
+    <th style="text-align: left;">Company Code:</th><td>{ccustno}</td>
+  </tr>
+  <tr>
+    <th style="text-align: left;">User Name:</th><td>{cusername}</td>
+  </tr>
+  <tr>
+    <th style="text-align: left;">Password:</th><td>{cpassword}</td>
+  </tr>
+</table>
+<p>By using this login sequence you will be able to access all of the information contained within the protected Dealer area.</p>
+
+<p>You may find some of the areas still under construction due to the massive amount of data that we need to provide.</p>
+
+<p>If you do encounter an area that appears incomplete please contact your A&D Mercury representative for assistance.</p>
+
+<p>We hope you find the site useful and as always we welcome your feedback with suggestions for improvement.</p>
+
+<p>Regards</p>
+<p>
+Webmaster
+</p>
+</body>

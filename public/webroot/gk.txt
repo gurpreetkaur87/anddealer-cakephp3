@@ -1,0 +1,77 @@
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <xs:element name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <xs:element name="GetPartOnHandWhseResponse">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:            <xs:element minOccurs="0" maxOccurs="1" name="GetPartOnHandWhseResult" type="vantageSchema:PartOnHandWhseDataSetType"/>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:  <wsdl:message name="GetPartOnHandWhseSoapIn">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:    <wsdl:part name="parameters" element="tns:GetPartOnHandWhse"/>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:  <wsdl:message name="GetPartOnHandWhseSoapOut">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:    <wsdl:part name="parameters" element="tns:GetPartOnHandWhseResponse"/>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:    <wsdl:operation name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;div&gt;The &lt;font color=#336699&gt;&lt;b&gt;&lt;i&gt;GetPartOnHandWhse&lt;/i&gt;&lt;/b&gt;&lt;/font&gt; Web method accepts the following arguments:&lt;ul type=circle style="padding-left:20px"&gt;&lt;li&gt;The Part Number (ParameterInfo)&lt;li&gt;The plant (ParameterInfo)&lt;/ul&gt;&lt;br&gt;&lt;b&gt;Returns:&lt;/b&gt;  The PartOnHandWhse data set (PartOnHandWhseDataSet)&lt;/div&gt;</wsdl:documentation>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <wsdl:input message="tns:GetPartOnHandWhseSoapIn"/>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <wsdl:output message="tns:GetPartOnHandWhseSoapOut"/>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:    <wsdl:operation name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <soap:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:    <wsdl:operation name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.asmx.xml:      <soap12:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<xs:element name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<xs:element name="GetPartOnHandWhseResponse">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<xs:element minOccurs="0" maxOccurs="1" name="GetPartOnHandWhseResult" type="vantageSchema:PartOnHandWhseDataSetType"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:message name="GetPartOnHandWhseSoapIn">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:part name="parameters" element="tns:GetPartOnHandWhse"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:message name="GetPartOnHandWhseSoapOut">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:part name="parameters" element="tns:GetPartOnHandWhseResponse"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:operation name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<br><div>The <font color=#336699><b><i>GetPartOnHandWhse</i></b></font> Web method accepts the following arguments:<ul type=circle style="paddingleft:20px"><li>The Part Number (ParameterInfo)<li>The plant (ParameterInfo)</ul><br><b>Returns:</b>  The PartOnHandWhse data set (PartOnHandWhseDataSet)</div>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:input message="tns:GetPartOnHandWhseSoapIn"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:output message="tns:GetPartOnHandWhseSoapOut"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:operation name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<soap:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+oldportalcode/vs/PartOnHandWhseService.wsdl:<wsdl:operation name="GetPartOnHandWhse">
+oldportalcode/vs/PartOnHandWhseService.wsdl:<soap12:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+oldportalcode/Includes/vantage_soap.ini:[GetPartOnHandWhse]
+oldportalcode/Includes/vantage_soap.ini:action=GetPartOnHandWhse
+oldportalcode/Includes/vantage_soap.ini:result_type=GetPartOnHandWhseResult
+oldportalcode/Includes/Backup/vantage_soap.ini:[GetPartOnHandWhse]
+oldportalcode/Includes/Backup/vantage_soap.ini:action=GetPartOnHandWhse
+oldportalcode/Includes/Backup/vantage_soap.ini:result_type=GetPartOnHandWhseResult
+oldportalcode/Includes/vantage_soap.ini.old:[GetPartOnHandWhse]
+oldportalcode/Includes/vantage_soap.ini.old:action=GetPartOnHandWhse
+oldportalcode/Includes/vantage_soap.ini.old:result_type=GetPartOnHandWhseResult
+oldportalcode/backup/dealer_soap_stock2.php:    $vantageSoap = new vantageSoap('GetPartOnHandWhse',$params);
+oldportalcode/backup/dealer_soap_stock2.php:      $data = $result['GetPartOnHandWhseResult']['PartOnHandWhseDataSet']['PartOnHandWhse'];
+soap_test/vantage_soap.ini:[GetPartOnHandWhse]
+soap_test/vantage_soap.ini:action=GetPartOnHandWhse
+soap_test/vantage_soap.ini:result_type=GetPartOnHandWhseResult
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <xs:element name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <xs:element name="GetPartOnHandWhseResponse">
+soap_test/vs/PartOnHandWhseService.asmx.xml:            <xs:element minOccurs="0" maxOccurs="1" name="GetPartOnHandWhseResult" type="vantageSchema:PartOnHandWhseDataSetType"/>
+soap_test/vs/PartOnHandWhseService.asmx.xml:  <wsdl:message name="GetPartOnHandWhseSoapIn">
+soap_test/vs/PartOnHandWhseService.asmx.xml:    <wsdl:part name="parameters" element="tns:GetPartOnHandWhse"/>
+soap_test/vs/PartOnHandWhseService.asmx.xml:  <wsdl:message name="GetPartOnHandWhseSoapOut">
+soap_test/vs/PartOnHandWhseService.asmx.xml:    <wsdl:part name="parameters" element="tns:GetPartOnHandWhseResponse"/>
+soap_test/vs/PartOnHandWhseService.asmx.xml:    <wsdl:operation name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;div&gt;The &lt;font color=#336699&gt;&lt;b&gt;&lt;i&gt;GetPartOnHandWhse&lt;/i&gt;&lt;/b&gt;&lt;/font&gt; Web method accepts the following arguments:&lt;ul type=circle style="padding-left:20px"&gt;&lt;li&gt;The Part Number (ParameterInfo)&lt;li&gt;The plant (ParameterInfo)&lt;/ul&gt;&lt;br&gt;&lt;b&gt;Returns:&lt;/b&gt;  The PartOnHandWhse data set (PartOnHandWhseDataSet)&lt;/div&gt;</wsdl:documentation>
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <wsdl:input message="tns:GetPartOnHandWhseSoapIn"/>
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <wsdl:output message="tns:GetPartOnHandWhseSoapOut"/>
+soap_test/vs/PartOnHandWhseService.asmx.xml:    <wsdl:operation name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <soap:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+soap_test/vs/PartOnHandWhseService.asmx.xml:    <wsdl:operation name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.asmx.xml:      <soap12:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<xs:element name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.wsdl:<xs:element name="GetPartOnHandWhseResponse">
+soap_test/vs/PartOnHandWhseService.wsdl:<xs:element minOccurs="0" maxOccurs="1" name="GetPartOnHandWhseResult" type="vantageSchema:PartOnHandWhseDataSetType"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:message name="GetPartOnHandWhseSoapIn">
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:part name="parameters" element="tns:GetPartOnHandWhse"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:message name="GetPartOnHandWhseSoapOut">
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:part name="parameters" element="tns:GetPartOnHandWhseResponse"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:operation name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.wsdl:<br><div>The <font color=#336699><b><i>GetPartOnHandWhse</i></b></font> Web method accepts the following arguments:<ul type=circle style="paddingleft:20px"><li>The Part Number (ParameterInfo)<li>The plant (ParameterInfo)</ul><br><b>Returns:</b>  The PartOnHandWhse data set (PartOnHandWhseDataSet)</div>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:input message="tns:GetPartOnHandWhseSoapIn"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:output message="tns:GetPartOnHandWhseSoapOut"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:operation name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.wsdl:<soap:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+soap_test/vs/PartOnHandWhseService.wsdl:<wsdl:operation name="GetPartOnHandWhse">
+soap_test/vs/PartOnHandWhseService.wsdl:<soap12:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+soap_test2/vantage_soap.ini:[GetPartOnHandWhse]
+soap_test2/vantage_soap.ini:action=GetPartOnHandWhse
+soap_test2/vantage_soap.ini:result_type=GetPartOnHandWhseResult

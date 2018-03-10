@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteBase /
+
+    # FORCE SSL REDIRECTION
+    RewriteCond %{ENV:HTTPS} !on [NC]
+    RewriteCond %{HTTP_HOST} !^local [NC]
+    RewriteCond %{HTTP_HOST} !^staging [NC]
+    RewriteRule ^(.*)$ https://dealers.andweighing.com.au//$1 [R,L]
+
+    RewriteRule ^$ app/webroot/ [L]
+    RewriteRule (.*) app/webroot/$1 [L]
+</IfModule>

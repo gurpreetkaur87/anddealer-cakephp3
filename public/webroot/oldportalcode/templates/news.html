@@ -1,0 +1,42 @@
+<div class="content">
+  <form method="post" action="web.php?p=1017">
+    <table class="news_archive" border="0" cellpadding="3" cellspacing="0" width="95%">
+      <tr>
+        <th>
+          News Archives
+        </th>
+        <th>
+          Month:
+        </th>
+        <th>
+          <select name="month">
+          <!-- BEGIN month_list -->
+            <option {selected}>{month}</option>
+          <!-- END month_list -->
+          </select>
+        </th>
+        <th>
+          Year:
+        </th>
+        <th>
+          <select name="year">
+            <!-- BEGIN year_block -->
+              <option {selected}>{year}</option>
+            <!-- END year_block -->
+          </select>
+        </th>
+        <th>
+          <input type="submit" value="Get News"/>
+        </th>
+      </tr>
+    </table>
+  </form>
+  <h1>A&amp;D Mercury News</h1>
+  <div>
+  <!-- BEGIN news_list -->
+      <a name="{date}"/>
+      {news}
+      <br/>
+  <!-- END news_list -->
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('New Instruction'), ['action' => 'add']) ?></li>
+    </ul>
+</nav>
+<div class="instructions index large-9 medium-8 columns content">
+    <h3><?= __('Instructions') ?></h3>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <!--th><?= $this->Paginator->sort('id') ?></th>
+                <th><?= $this->Paginator->sort('parent_id') ?></th-->
+                <th><?php // $this->Paginator->sort('name') ?></th>
+                <!--th><?= $this->Paginator->sort('file_name') ?></th>
+                <th><?= $this->Paginator->sort('created') ?></th>
+                <th class="actions"><?= __('Actions') ?></th-->
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($instructions as $instruction): 
+			if($instruction->parent_id == 0) {
+			?>
+            <tr>
+                <!--td><?= $this->Number->format($instruction->id) ?></td>
+                <td><?= $instruction->has('parent_instruction') ? $this->Html->link($instruction->parent_instruction->name, ['controller' => 'Instructions', 'action' => 'view', $instruction->parent_instruction->id]) : '' ?></td-->
+                <td><a href="/instructions/view/<?php echo $instruction->id; ?>"><?= h($instruction->name) ?></a></td>
+                <!--td><?= h($instruction->file_name) ?></td>
+                <td><?= h($instruction->created) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $instruction->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $instruction->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $instruction->id], ['confirm' => __('Are you sure you want to delete # {0}?', $instruction->id)]) ?>
+                </td-->
+            </tr>
+            <?php } endforeach; ?>
+        </tbody>
+    </table>
+    <!--div class="paginator">
+        <ul class="pagination">
+            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('next') . ' >') ?>
+        </ul>
+        <p><?= $this->Paginator->counter() ?></p>
+    </div-->
+</div>

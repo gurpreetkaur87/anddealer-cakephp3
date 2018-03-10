@@ -1,0 +1,70 @@
+<div class="content">
+  <h2>Stock On Hand Enquiry</h2>
+<!--  <div class="notice">
+    <h3 style="color: red; text-align: center;">This Tool is Under Development</h3>
+    <p style="text-align: center;">
+      While this tool is returning valid information about available quantities, it is still incomplete and there is information missing. We are continuing to work on this tool to improve the information it provides and hope to have another update soon.
+    </p>
+    <p style="text-align: center;">
+      We apologise for any inconvenience that this lack of infomation may cause.
+    </p>
+  </div>-->
+  <form method="post" action="web.php?p=9012">
+    <table>
+      <tr>
+        <td>Item ID #:</td>
+        <td><input type="text" name="itemno" size="20"/></td>
+        <td><input type="submit" value="Submit"/></td>
+      </tr>
+    </table>
+    <p style="visibility: {evisible}; color: red;">
+      No items matched the Item code entered.
+    </p>
+    <table style="visibility: {visible};text-align: center;" border="1" cellpadding="3px" cellspacing="0">
+      <tr style="background-color: #FFFF00">
+        <th>Item #</th>
+        <th>Item Description</th>
+        <th>Number Available</th>
+<!--        <th>Number on Order</th>-->
+        <th>Price per Item</th>
+      </tr>
+      <tr style="background-color: #CCFFFF">
+        <td>{citemno}</td>
+        <td>{cdescript}</td>
+        <td>{available}</td>
+<!--        <td>{incoming}</td>-->
+        <td>${nprice}</td>
+      </tr>
+    </table>
+  </form>
+  <br/>
+  <br/>
+  <table style="border: solid 1px black; text-align: center;" cellpadding="3px" cellspacing="0">
+        <tr style="background-color: yellow; color: red;">
+          <th colspan="3" style="border-bottom: solid 1px black;">IMPORTANT! New part Numbers</th>
+        </tr>
+        <tr style="background-color: #CCCCCC;">
+          <th>Description</th>
+
+          <th style="border-left: solid 1px black; border-right: solid 1px black;">Old Part Number</th>
+          <th>New Part Number</th>
+        </tr>
+        <tr style="background-color: #CCFFFF;">
+          <td>FG150KAL</td>
+          <td style="border-left: solid 1px black; border-right: solid 1px black;">06145400</td>
+          <td>03175740</td>
+
+        </tr>
+        <tr style="background-color: #CCCCCC;">
+          <td>FG60KAL</td>
+          <td style="border-left: solid 1px black; border-right: solid 1px black;">06145500</td>
+          <td>03175730</td>
+        </tr>
+        <tr style="background-color: #CCFFFF;">
+
+          <td>FG30KBM</td>
+          <td style="border-left: solid 1px black; border-right: solid 1px black;">06145600</td>
+          <td>03175750</td>
+        </tr>
+      </table>
+</div>

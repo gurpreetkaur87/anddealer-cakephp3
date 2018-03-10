@@ -1,0 +1,33 @@
+	<h2>A&amp;D Superseded {ptype}</h2>
+	<p>
+	 This page provides you with a list of Superseded {ptype}. These pages are maintained for historical purposes only.
+	</p>
+<!--	<h4 style="margin: 0; padding: 0;">
+		<a href="web.php?p={ppp}">Back to Previous Page</a>
+	</h4>-->
+  <div style="width: 99%;">
+    <div class="product_column">
+      {product_list}
+    </div>
+  </div>
+  <div style="visibility: {sa_vis};">
+    <h2 style="clear: both;">Superseded Archive</h2>
+    <table class="table" width="100%" cellspacing="0" cellpadding="2" border="0">
+		<thead>
+     	<tr>
+				<td width="40%">Superseded Model</td>
+				<td>Current Model</td>
+			</tr>
+		</thead>
+		<tbody>
+      <!-- BEGIN super_list -->
+      <tr>
+        <td>{smodel}</td>
+        <td>{cmodel}</td>
+      </tr>
+      <!-- END super_list -->
+    </table>
+  </div>
+</div>
+
+

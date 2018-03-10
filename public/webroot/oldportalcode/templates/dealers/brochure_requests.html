@@ -1,0 +1,46 @@
+<div class="content">
+  <h2>Brochure Request Form</h2>
+  <form action="web.php?p=9001&m=req" method="POST" name="brochures">
+    <p>Your Details:</p>
+    <table>
+      <tr>
+        <th style="color: red" colspan="2">{error}</th>
+      </tr>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="name" value="{name}"/></td>
+      </tr>
+      <tr>
+        <td>Branch:</td>
+        <td><input type="text" name="branch" value="{branch}"/></td>
+      </tr>
+      <tr>
+        <td>Account:</td>
+        <td><select name="account" value="{account}">
+              <option></option>
+            <!-- BEGIN account_list -->
+              <option {acc_selected}>{acc_num}</option>
+            <!-- END account_list -->
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Please hold the Control Key to make multiple selections</td>
+      </tr>
+      <tr>
+        <td>Brochures:</td>
+        <td>
+          <select size="5" name="brochures[]" multiple>
+          <!-- BEGIN brochure_list -->
+            <option>{brochure}</option>
+          <!-- END brochure_list -->
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input type="submit" name="submit" value="Submit"/></td>
+      </tr>
+    </table>
+  </form>
+</div>

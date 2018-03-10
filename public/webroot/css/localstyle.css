@@ -1,0 +1,1342 @@
+header{
+	margin-bottom: 25px;
+}
+header .container{
+	padding-top: 30px;
+	border-bottom: 1px solid #d9d9d9
+}
+input[type=file]{
+	display: inline-block;
+}
+.header-user{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #2457a6;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    z-index: 99;
+    background-image: url('../img/arrow-down-blue.png');
+    background-repeat: no-repeat;
+    background-position: 93% 15px;
+    background-size: 10px;
+}
+.header-user span{
+	display: block;
+	width: 100%;
+	height: 100%;
+    border: 1px solid #d9d9d9;
+    background-image: url('../img/member-icon.jpg');
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 17px 18px;
+    padding: 0 50px;
+}
+.header-user a{
+	display: none;
+	background-color: #fff;
+	border: 1px solid #d9d9d9;
+	border-top: 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	text-align: center;
+}
+#logo{
+	padding-left: 15px;
+	float: left;
+	margin-bottom: 20px;
+}
+.blue{
+	font-weight: 900;
+	color: #3c7ada
+}
+nav#header-nav {
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 15px;
+    position: absolute;
+    left: 155px;
+    top: 68px;
+}
+nav#header-nav ul{
+	list-style: none;
+}
+nav#header-nav ul.level0 > li{
+	display: inline-block;
+	padding: 0 8px;
+}
+nav#header-nav ul.level0 > li.level1 > a{
+    color: #2b2b2b;
+    padding: 15px 10px 15px 15px;
+}
+nav#header-nav ul.level0 > li.level1 > a span{
+	display: inline-block;
+}
+nav#header-nav ul.level0 > li.level1 > a i{
+    padding-left: 5px;
+    font-size: 9px;
+    vertical-align: top;
+    padding-top: 3px;
+    padding-right: 15px;
+}
+nav#header-nav .parent:hover  a.nav-title{
+	text-decoration: none;
+	color: #fff;
+	background-color: #3c7ada
+}
+nav#header-nav .parent{
+    position: relative;
+}
+nav#header-nav ul.level2{
+	display: none;
+    z-index: 9;
+    padding: 10px 0px;
+    background-color: #3c7ada;
+    color: #fff;
+    top: 30px;
+    min-width: 150px;
+    position: absolute;
+}
+nav#header-nav ul.level2 a{
+	color: #fff;
+	font-size: 13px;
+	display: block;
+	padding: 10px 35px 10px 15px;
+	white-space: nowrap;
+}
+nav#header-nav ul.level2 a:hover{
+	background-color: #4c92ff;
+	text-decoration: none;
+}
+footer{
+	text-align: center;
+	padding: 30px 0 50px;
+}
+footer .copyright{
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 5px;
+}
+footer .footer-nav{
+	position: relative;
+}
+footer .footer-nav .divider{
+	position: absolute;
+	width: 1px;
+	height: 8px;
+	top: 5px;
+	background-color: #2b2b2b;
+}
+footer .footer-nav .divider-1{
+	left: 447px;
+}
+footer .footer-nav .divider-2{
+	left: 527px;
+}
+footer .footer-nav .divider-3{
+	left: 715px;
+}
+footer ul#footer-nav li{
+	display: inline-block;
+}
+footer ul#footer-nav li a{
+	font-size: 13px;
+	padding: 0 20px;
+}
+#actions-sidebar {display:none;}
+/***********************   home page start   *********************/
+/***********************   home page start   *********************/
+.banner{
+	margin-bottom: 30px;
+	background-image: url('../img/Dealerbanner.png');
+	background-size: contain;
+	height: 290px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block{
+	border: 1px solid #d9d9d9;
+	border-radius: 15px;
+	padding: 35px 25px 75px;
+	position: relative;
+}
+.category-menu{
+	margin-bottom: 15px;
+}
+.category-menu .wrapper{
+	border: 1px solid #d9d9d9;
+	border-radius: 15px;
+	height: 90px;
+	padding: 15px;
+	overflow: hidden;
+}
+.category-menu div.img{
+	float: left;
+	width: 50%;
+}
+.category-menu span{
+    float: left;
+    width: 90px;
+    display: block;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.category-menu-2 span{
+	margin-top: 3px
+}
+.category-menu-3 span{
+	margin-top: 23px;
+}
+.category-menu-5 span{
+	margin-top: 0;
+}
+.category-menu-6 span{
+	margin-top: 21px;
+}
+.category-menu-1 img{
+	width: 73px;
+	height: 55px;
+}
+.category-menu-2 img{
+	width: 86px;
+	height: 69px;
+}
+.category-menu-3 img{
+	width: 68px;
+	height: 74px;
+}
+.category-menu-4 img{
+	width: 63px;
+	height: 63px;
+}
+.category-menu-5 img{
+	width: 80px;
+	height: 66px;
+}
+.category-menu-6 img{
+	width: 80px;
+	height: 67px;
+}
+.category-menu-5, .category-menu-6{
+	margin-bottom: 0
+}
+.category-menu span{
+	color: #2b2b2b;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.dealer-home-block{
+	position: relative;
+	padding: 25px 0px;
+}
+.dealer-home-block .divider{
+	position: absolute;
+	height: 315px;
+	background-color: #d9d9d9;
+	width: 1px;
+    left: 51.5%;
+}
+.dealer-home-block .last .wrapper{
+	padding: 0 20px 0 55px;
+}
+label{
+	width: 100px;
+}
+input{
+	max-width: 295px;
+	width: calc(100% - 200px);
+	height: 33px;
+	border: 1px solid #d9d9d9;
+	font-size: 14px;
+	color: #2b2b2b;
+	padding-left: 15px;
+	margin-right: 5px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9c9c9c;
+  font-size: 12px
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #9c9c9c;
+  font-size: 12px
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #9c9c9c;
+  font-size: 12px
+
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #9c9c9c;
+  font-size: 12px
+
+}
+.search-btn{
+	width: 85px;
+	height: 33px;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0;
+	background-color: #3c7ada;
+	border-radius: 0;
+}	
+.search-stock{
+	padding: 45px 0;
+	border-bottom: 1px solid #d9d9d9;
+}
+.search-spare-parts{
+	padding: 45px 0 0;
+}
+.category-list{
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-right: 0
+}
+/***********************   home page end   *********************/
+/***********************   home page end   *********************/
+/***********************   technical doucment page start   *********************/
+/***********************   technical doucment page start   *********************/
+.tech-main-page ul.breadcrumb li{
+	font-weight: 700;
+	font-size: 14px;
+}
+.add-button{
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	width: auto;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    background-color: #3c7ada;
+    border-radius: 0;
+}
+.add-button a{
+	color: #fff;
+}
+.delete-button{
+	position: absolute;
+	right: 15px;
+	top: 0px;
+	width: auto;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    background-color: #3c7ada;
+    border-radius: 0;
+}
+.delete-button a{
+	color: #fff;
+}
+.breadcrumb li{
+	font-weight: 700;
+}
+.breadcrumb a{
+	font-weight: 700;
+	color: #2b2b2b;
+}
+.breadcrumb a.current{
+	color: #2b2b2b;
+}
+.tech-block{
+	min-height: 500px;
+}
+.ul-list ul{
+	list-style: none; 
+}
+.ul-list ul.columns{
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; 
+}
+.column{
+	display: inline-block;
+}
+.ul-list ul li{
+	color: #2b2b2b;
+	padding-bottom: 10px;
+	min-height: 47px;
+	width: 100%;
+	min-width: 355px
+}
+.ul-list ul li a{
+	color: #175ac3;
+	display: inline-block;
+	vertical-align: top;
+}
+.ul-list ul li a:last-child{
+	width: calc(100% - 65px);
+	padding-top: 5px;
+	padding-right: 10px;
+}
+.add-page-block .add-form select{
+  	width: 350px;
+    height: 33px;
+    border: 1px solid #d9d9d9;
+    font-size: 12px;
+    color: #9c9c9c;
+    padding-left: 15px;
+    margin-right: 5px;
+    background-image: url(../img/arrows.png);
+    background-repeat: no-repeat;
+    background-position: 98%;
+}
+.add-page-block .add-form input{
+  	width: 350px;	
+  	max-width: 350px;
+}
+.form-title{
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #848484;
+}
+.add-page-block div.input{
+	margin-bottom: 10px;
+}
+.add-page-block div.input.textarea label{
+	vertical-align: top;
+}
+.add-page-block div.input.textarea textarea{
+	width: 350px;
+    border: 1px solid #d9d9d9;
+	font-size: 12px;
+    color: #9c9c9c;
+    padding-left: 15px;
+}
+.add-page-block button{
+	width: 350px;
+    height: 33px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0;
+    background-color: #3c7ada;
+    border-radius: 0;
+    margin-left: 100px;
+}
+.tech-block .category-menu .col-xs-3{
+	margin-bottom: 15px;
+}
+.tech-block .category-menu .col-xs-3 .wrapper{
+	overflow: hidden;
+}
+.tech-block .category-menu .col-xs-3 a.img{
+	width: 73px;
+    height: 55px;
+    display: block;
+    float: left;
+
+}
+.tech-block .category-menu .col-xs-3 a.word{
+	display: block;
+	width: 55%;
+	margin-left: 15px;
+	float: left;
+	font-weight: 700;
+	max-height: 65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+}
+/***********************   technical doucment page end   *********************/
+/***********************   technical doucment page end   *********************/
+/***********************   stock enquiry page start   *********************/
+/***********************   stock enquiry page start   *********************/
+.stock-list{
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-right: 0
+}
+.stock-block .stock-form {
+	margin-bottom: 30px;
+}
+.stock-block .stock-form h2{
+	margin-bottom: 25px;
+}
+.stock-list{
+	text-align: center;
+	max-width: 477px;
+}
+.stock-list .table-title{
+	background-color: #fffed3;
+	color: #d90000;
+}
+.stock-list a{
+	color: #2b2b2b;
+}
+/***********************   stock enquiry page end   *********************/
+/***********************   stock enquiry page end   *********************/
+/***********************   Manual page start   *********************/
+/***********************   Manual page start   *********************/
+.tab{
+	display: none;
+}
+.active{
+	display: block;
+}
+.tab-lists{
+
+}
+.tab-lists li{
+	display: inline-block;
+	padding: 10px 25px;
+	border: 1px solid #d9d9d9;
+	background-color: #f3f3f3;
+	margin-bottom: 50px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.tab-lists li.active{
+	color: #fff;
+	background-color: #3c7ada;
+}
+/***********************   Manual page end   *********************/
+/***********************   Manual page end   *********************/
+/***********************   login page start   *********************/
+/***********************   login page start   *********************/
+.login-form{
+	position: fixed;
+	width: 515px;
+	height: 400px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+}
+.login-form label{
+	width: 150px;
+	text-align: right;
+	font-weight: 700;
+}
+.login-logo{
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.login-form h1{
+	margin-bottom: 20px;
+}
+.login-form h2{
+	margin-bottom: 30px;
+}
+.input-field{
+	margin-bottom: 10px;
+}
+.input-field input{
+	padding-left: 15px;
+	margin-left: 15px;
+	max-width: 190px;
+	color: #2b2b2b;
+	font-size: 14px;
+}
+button#login-button{
+	background-color: #3c7ada;
+	color: #fff;
+	border-radius: 0;
+	width: 190px;
+	margin-left: 0;
+	height: 40px;
+	margin-top: 30px;
+}
+/***********************   login page end   *********************/
+/***********************   login page end   *********************/
+/***********************   install disgram page start   *********************/
+/***********************   install disgram page start   *********************/
+.install-table{
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+p.msg{
+	margin-bottom: 0;
+	font-weight: 700;
+}
+p.msg span{
+	background-color: #d90000;
+	color: #fff;
+	margin-right: 10px;
+}
+.install-table-cell{
+	vertical-align: middle;
+}
+.add-dealer-form{
+	float: right;
+}
+/***********************   install disgram page end   *********************/
+/***********************   install disgram page end   *********************/
+/***********************   add dealer page start   *********************/
+/***********************   add dealer page start   *********************/
+.red-p{
+	color: #d90000;
+}
+.add-dealer-block {
+	min-height: 500px;
+}
+.add-dealer-block .divider{
+    position: absolute;
+    height: 280px;
+    background-color: #d9d9d9;
+    width: 1px;
+    left: 53.5%;
+    top: 115px;
+}
+.add-dealer-form h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.add-dealer-form label{
+	text-align: right;
+	width: 110px;
+	font-weight: 700;
+}
+.add-dealer-form .input-field input{
+	max-width: 240px;
+}
+.input-field .form-subtitle{
+	font-weight: 700;
+	margin-left: 15px;
+	display: inline-block;
+}
+.fake-radios{
+	display: inline-block;
+}
+.fake-radios .radio{
+	display: inline-block;
+	border: 2px solid #d9d9d9;
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	margin: 0;
+    vertical-align: bottom;
+    margin-left: 20px;
+    margin-right: 3px;
+}
+.fake-radios .radio-label{
+	display: inline-block;
+	font-weight: 700;
+}
+.fake-radios .fake-radio{
+	display: inline-block;
+}
+.fake-radios .radio.checked{
+	border: 5px solid #3c7ada;
+}
+.fake-radio-input-field{
+	position: relative;
+	margin: 20px 0;
+}
+.fake-radio-input-field input{
+    position: absolute;
+    height: 20px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+}
+.fake-radio-input-field input#yes-radio{
+	left: 258px;
+}
+.fake-radio-input-field input#no-radio{
+	left: 332px;
+}
+.status-select{
+	height: 30px;
+    width: 240px;
+    padding-left: 15px;
+    margin-left: 15px;
+    border: 1px solid #d9d9d9;
+    background-image: url('../img/arrows.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+/***********************   add dealer page end   *********************/
+/***********************   add dealer page end   *********************/
+/***********************   dealer report page start   *********************/
+/***********************   dealer report page start   *********************/
+.dealer-reports{
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	overflow: auto;
+}
+.dealer-report{
+	border-bottom: 1px solid #d9d9d9;
+	overflow: auto;
+}
+.dealer-report-form button{
+	float: right;
+	width: 80px;
+	border-radius: 0;
+	font-size: 12px;
+	background-color: #3c7ada;
+	color: #fff;
+	margin-top: 15px;
+}
+.dealer-report-content{
+	float: left;
+}
+.dealer-report-title{
+	border-right: 1px solid #d9d9d9;
+}
+.dealer-report-title h2{
+	line-height: 60px;
+	margin-bottom: 0;
+}
+.dealer-report-form{
+	line-height: 60px;
+}
+.dealer-report-content input#access-number{
+	width: 60px;
+	margin-left: 5px;
+}
+.dealer-report-content input#activity-company{
+	width: 135px;
+	margin-left: 5px;
+}
+.dealer-list-table-cell{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dealer-list-table-cell a{
+	color: #2b2b2b;
+	display: block;
+	width: 100%;
+}
+.dealer-list-table-cell.action{
+	text-align: center;
+}
+.dealer-list-table{
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+.dealer-list-table-row:nth-child(even){
+	background-color: #ebebeb;
+}
+/***********************   dealer report page end   *********************/
+/***********************   dealer report page end   *********************/
+/***********************   dealer search page start   *********************/
+/***********************   dealer search page start   *********************/
+.dealer-search-form{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+#dealer-search-form button{
+	width: 80px;
+	border-radius: 0;
+	font-size: 12px;
+	background-color: #3c7ada;
+	color: #fff;
+}
+/***********************   dealer search page end   *********************/
+/***********************   dealer search page end   *********************/
+.manuals-main-page ul.breadcrumb li{
+	font-weight: 700;
+	font-size: 14px;
+}
+.maintain-main-page ul.breadcrumb li{
+	font-weight: 700;
+	font-size: 14px;
+}
+.stock-main-page ul.breadcrumb li{
+	font-weight: 700;
+	font-size: 14px;
+}
+.pd-main-page ul.breadcrumb li{
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.instruction-main-page ul.breadcrumb li{
+	font-weight: 700;
+	font-size: 14px;
+}
+.block-list.category-menu .list-col{
+	margin-bottom: 15px;
+}
+.block-list.category-menu .list-col .wrapper{
+	overflow: hidden;
+}
+.block-list.category-menu .list-col a.img{
+	width: 73px;
+    height: 55px;
+    display: inline-block;
+    float: none;
+	vertical-align: middle;
+	background-size: cover;
+}
+
+.block-list.category-menu .list-col a.word{
+	display: inline-block;
+	width: 55%;
+	margin-left: 15px;
+	float: none;
+	font-weight: 700;
+	max-height: 65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: normal;
+	color: #2b2b2b;
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.install-table .install-table-cell:first-child{
+	width: 330px;
+}
+.price-list-block .category-menu span{
+	width: 150px;
+	margin-top: 23px;
+}
+.price-list-block .category-menu div.img{
+	width: 35%;
+}
+.stock-main-page label{
+	display: block;
+}
+.stock-main-page input{
+	display: block;
+	float: left;
+}
+.stock-main-page h2{
+	color: #2b2b2b;
+	margin-bottom: 20px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(1) .numbers{
+	background-image: url('../img/numbers/1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(2) .numbers{
+	background-image: url('../img/numbers/2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(3) .numbers{
+	background-image: url('../img/numbers/3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(4) .numbers{
+	background-image: url('../img/numbers/4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(5) .numbers{
+	background-image: url('../img/numbers/5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(6) .numbers{
+	background-image: url('../img/numbers/6.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(1) .numbers{
+	background-image: url('../img/numbers/1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(2) .numbers{
+	background-image: url('../img/numbers/2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(3) .numbers{
+	background-image: url('../img/numbers/3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(4) .numbers{
+	background-image: url('../img/numbers/4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(5) .numbers{
+	background-image: url('../img/numbers/5.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(6) .numbers{
+	background-image: url('../img/numbers/6.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(7) .numbers{
+	background-image: url('../img/numbers/7.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(8) .numbers{
+	background-image: url('../img/numbers/8.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(9) .numbers{
+	background-image: url('../img/numbers/9.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(10) .numbers{
+	background-image: url('../img/numbers/10.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.technical-list .list-col:nth-child(11) .numbers{
+	background-image: url('../img/numbers/11.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(6) .numbers{
+	background-image: url('../img/other-manuals-ins.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(5) .numbers{
+	background-image: url('../img/cat-balance-ins.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(4) .numbers{
+	background-image: url('../img/cat-medical.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(3) .numbers{
+	background-image: url('../img/cat-indicator-ins.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 55px;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(2) .numbers{
+	background-image: url('../img/cat-measurement-ins.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block-list.category-menu.instruction-list .list-col:nth-child(1) .numbers{
+	background-image: url('../img/cat-scale-ins.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60px;
+}
+.instruction-main-page .block-list.category-menu.instruction-list .list-col:nth-child(1) .numbers{
+	background-size: 73px;
+}
+.instruction-main-page .block-list.category-menu.instruction-list .list-col:nth-child(2) .numbers{
+	background-size: 73px;
+}
+.instruction-main-page .block-list.category-menu.instruction-list .list-col:nth-child(3) .numbers{
+	background-size: 73px;
+}
+.instruction-main-page .block-list.category-menu.instruction-list .list-col:nth-child(4) .numbers{
+	background-size: 73px;
+}
+.instruction-main-page .block-list.category-menu.instruction-list .list-col:nth-child(5) .numbers{
+	background-size: 73px;
+}
+.instruction-main-page .block-list.category-menu.instruction-list .list-col:nth-child(6) .numbers{
+	background-size: 73px;
+}
+.pd-list .list-col:nth-child(1) .numbers{
+	background-image: url('../img/cat-scale-maintain.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.pd-list .list-col:nth-child(2) .numbers{
+	background-image: url('../img/cat-balance.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block-list.category-menu.pd-list .list-col:nth-child(3) .numbers{
+	background-image: url('../img/cat-indicator-maintain.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+		background-size: 55px
+}
+.block-list.category-menu.pd-list .list-col:nth-child(4) .numbers{
+	background-image: url('../img/cat-measurement-ins.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.block-list.category-menu.maintains-list .list-col:nth-child(4) .numbers{
+	background-image: url('../img/other-manuals-maintain.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.block-list.category-menu.maintains-list .list-col:nth-child(5) .numbers{
+	background-image: url('../img/cat-medical.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+.block-list.category-menu.maintains-list .list-col:nth-child(3) .numbers{
+	background-image: url('../img/cat-balance-maintain.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.block-list.category-menu.maintains-list .list-col:nth-child(2) .numbers{
+	background-image: url('../img/cat-indicator-maintain.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	    background-size: 62px;
+}
+.block-list.category-menu.maintains-list .list-col:nth-child(1) .numbers{
+	background-image: url('../img/cat-scale-maintain.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60px;
+}
+.price-list-block ul.breadcrumb li a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #2b2b2b
+}
+.dealer-table .table-header .table-cell{
+	border-top: 1px solid #d9d9d9
+}
+.dealer-table .table-header .table-cell:first-child{
+	border-left: 1px solid #d9d9d9
+}
+.dealer-table .table-cell:first-child{
+	border-left: 1px solid #d9d9d9
+}
+.table-cell a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.table-cell img{
+	margin: auto;
+	display: block;
+}
+.table-cell.last a{
+	background-image: url('../img/bin.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+	width: 25px;
+	height: 24px;
+	margin: auto;
+}
+.price-list-block .category-menu-1 img{
+	width: 44px;
+    height: auto;
+}
+.price-list-block .category-menu-2 img {
+    width: 64px;
+    height: auto;
+}
+.price-list-block  .category-menu-3 img{
+	width: 61px;
+	height: auto;
+}
+.button-set{
+	position: absolute;
+	right: 0;
+	top: 20px;
+	width: auto;
+}
+.button-set .add-button, .button-set .edit-button, .button-set .list-button{
+	position: relative;
+	display: inline-block;
+	width: auto;
+	line-height: 33px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 30px;
+    background-color: #3c7ada;
+    border-radius: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-right: 25px;
+}
+.button-set .edit-button a,  .button-set .list-button a{
+	color: #fff;
+}
+.row-set .col-md-2{
+	width: 125px;
+}
+.row-set .row{
+	margin-bottom: 10px;
+}
+.add-page-block div.input.datetime select{
+	width: 15%;
+	display: inline-block;
+}
+.mobile{
+	display: none;
+}
+.dealer-search-result-table{
+	display: none;
+}
+#stockSearchresult, #spareSearchresult{
+	margin-top: 20px;
+}
+#stockSearchresult .stock-result-table{
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+#spareSearchresult .spare-result-table{
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+.stock-result-table .table-header .table-cell{
+	padding: 15px 13px;
+}
+/********************   Responsive start   *******************/
+/********************   Responsive start   *******************/
+@media screen and (min-width: 1025px){
+	.container{
+		width: 1170px;
+	}
+}
+@media screen and (max-width: 1024px){
+	.mobile{
+		display: block;
+	}
+	nav#header-nav{
+		display: none;
+	    width: 300px;
+	    right: -300px;
+	    position: fixed;
+	    overflow-y: auto;
+	    padding: 0;
+	    top: 0;
+	    left: auto;
+	    background-color: #d9d9d9;
+	    z-index: 999;
+	    height: 100vh;
+	    padding: 50px 0 0;
+	}
+	.burger_btn{
+		width: 45px;
+		position: absolute;
+		right: 0;
+	}
+	.close_btn{
+		width: 45px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+	.header-user{
+		top: 32px;
+		right: 75px;
+	}
+	nav#header-nav ul.level0 > li{
+		display: block;
+		padding: 0;
+
+	}
+	nav#header-nav ul.level0 > li.parent{
+		background-image: url('../img/arrow-right-white.png');
+	    background-repeat: no-repeat;
+	    background-size: 6px;
+	    background-position: 260px 17px;
+	}
+	nav#header-nav ul.level0 > li.parent.down{
+		background-image: url('../img/arrow-down-white.png');
+	    background-repeat: no-repeat;
+	    background-size: 10px;
+   		background-position: 256px 17px;
+	}
+	nav#header-nav ul.level0 > li.level1 > a{
+		padding: 15px 25px;
+		display: block;
+		clear: both;
+		width: 200px;
+	}
+	nav#header-nav .parent:hover  a.nav-title{
+		background-color: transparent;
+	}
+	nav#header-nav ul.level0 > li.level1 > a i{
+		display: none;
+	}
+	nav#header-nav ul.level2{
+		position: relative;
+	    top: auto;
+	    background-color: transparent;
+	    padding: 0 25px;
+	    color: #2b2b2b;
+	}
+	nav#header-nav ul.level2 a{
+	    padding: 5px 15px;
+	    color: #2b2b2b;
+	    white-space: normal;
+	}
+	/********************   Login Page start   *******************/
+	.login-form{
+		width: 100%;
+		max-width: 515px;
+	}
+
+	/********************   Login Page end   *******************/
+	/********************   Home Page start   *******************/
+	.dealer-home-block .first{
+		width: 100%;
+	}
+	.dealer-home-block .divider{
+		display: none;
+	}
+	.dealer-home-block .last .wrapper{
+		padding: 0 20px;
+	}
+	.category-menu div.img{
+		max-width: 150px;
+	}
+	
+	/********************   Home Page end   *******************/
+	/********************   Stock Page start   *******************/
+
+	.stock-main-page .form1{
+		margin-bottom: 30px;
+	}
+	/********************   Stock Page end   *******************/
+	.ul-list ul.columns{
+		column-count: 2
+	}
+	.manuals-main-page .block-list.manuals-list.category-menu .col-xs-3{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 768px){
+	.ul-list ul.columns{
+		column-count: 1
+	}
+	.install-table .install-table-cell:first-child{
+		width: 50%
+	}
+	.manuals-main-page .block-list.manuals-list.category-menu .col-xs-3{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 568px){
+	.category-menu{width: 100%;}
+	#stockSearchForm label{
+		width: 100%;
+	}
+	#search-stock-form label{
+		width: 100%;
+	}
+	#stockSearchForm input{
+		width: calc(100% - 95px);
+		padding-left: 5px
+	}
+	#search-stock-form input{
+		width: calc(100% - 95px);
+		padding-left: 5px
+
+	}
+	.category-menu-5{
+		margin-bottom: 15px;
+	}
+	.add-button{
+		position: relative;
+		right: auto;
+		top: auto;
+		margin-bottom: 30px;
+		float: left;
+	}
+	.block{
+		border: 0;
+		padding: 0 15px;
+	}
+	.ul-list{
+		padding: 0;
+	}
+}
+@media screen and (max-width: 479px){
+	.ul-list ul li{
+		clear: both;
+		min-width: 0;
+	}
+	.install-table .install-table-cell:first-child{
+		width: 30%
+	}
+	.block-list.category-menu .list-col{
+		padding: 0;
+	}
+}
+/********************   Responsive end   *******************/
+/********************   Responsive end   *******************/
+.table.install-table .table-cell a{
+	display: block;
+	float: left;
+	width: auto;
+	height: auto;
+}
+.table.install-table .table-cell a.install-table-cell-last{
+	width: 80%;
+	float: right;
+}
+.table.install-table .table-cell a.admin_only{
+	width: 80%;
+	float: right;
+}
+.table.install-table .table-cell a.dealer_only{
+	width: 100%;
+}
+.input-checkbox-part {
+	position: relative;
+	margin-bottom: 10px;
+}
+.input-checkbox-part .input.checkbox{
+    float: left;
+    margin: 0;
+    height: 15px;
+    margin-left: 80px;
+}
+.input-checkbox-part .input.checkbox label{
+	width: 40px;
+	height: 15px;
+}
+.input-checkbox-part .input.checkbox input{
+	width: 15px;
+	height: 15px;
+	margin: 0;
+}
+.input-checkbox-part .input.checkbox span{
+	padding-left: 25px;
+}
+.error {
+	margin: 10px 0px;
+	padding:12px;
+	color: #D8000C;
+    background-color: #FFBABA;
+}

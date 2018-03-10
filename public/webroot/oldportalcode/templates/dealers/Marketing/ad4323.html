@@ -1,0 +1,102 @@
+<div class="content">
+<h1>Marketing Tip </h1>
+
+<p><b><u>Subject - AD4323DR - Dual Range Indicator</u></b> </p>
+
+<table border="2">
+  <tr>
+    <td>&nbsp;</td>
+    <td>The AD4323DR digital indicator was developed from the standard AD4323 <br>
+    model to provide, principally, an indicator suitable for connection to a <br>
+    weighbridge and to provide a capacity in excess of 60 tonnes but retaining <br>
+    the 0.02 tonne graduation in the lower range.</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>The software changes were minimal to achieve this function and the standard <br>
+    AD4323 Instruction Manual is used, in conjunction with a modification sheet <br>
+    applicable to the AD4323DR. This modification sheet causes some heartache <br>
+    for installers in its interpretation so some explanation is required. </td>
+  </tr>
+</table>
+
+<p><b><u>The Changes from the Standard AD4323</u></b> </p>
+
+<table border="2">
+  <tr>
+    <td>Function F1- Decimal point position</td>
+    <td>This function has been removed since the decimal point position is <br>
+    set automatically by the modified function F2.</td>
+  </tr>
+  <tr>
+    <td>Function F2 - Weighing Unit</td>
+    <td>F2=1 The weighing unit is kg and there is no decimal point <p>F2=2 The weighing unit
+    is tonne and the decimal point is in the second position i.e. x.xx </p>
+    <p><i>When F2=1 A dummy zero is placed by the software at the end of the display and this
+    must be taken into account during calibration.</i> </td>
+  </tr>
+  <tr>
+    <td>Function F11 - Internal parameter </td>
+    <td>This function must be set to a value 1 to enable the AD4323DR to function correctly.</td>
+  </tr>
+  <tr>
+    <td>Function F65 - Low Range Capacity </td>
+    <td>This function determines the point at which the indicator switches from low to high
+    range graduation. The installer has complete control over this value. However if you have
+    selected F2=1 a dummy zero has been inserted by the software and you should enter (Low
+    Range capacity divided by 10) as the capacity. </td>
+  </tr>
+  <tr>
+    <td>Function F66 - Internal parameter </td>
+    <td>This function must be set to a value 0 to enable the AD4323DR to function correctly. </td>
+  </tr>
+  <tr>
+    <td>Calibration </td>
+    <td><p align="left">In the standard calibration routine the Minimum Division that is
+    entered is the Low Range division. If function F2 has been set to value 1 the display will
+    show 1, 2 or 5 as the division but because of the dummy zero these figures will actually
+    represent 10, 20, 50. The minimum division for the High range will be automatically
+    allocated by the software as the next higher increment i.e.</p>
+    <table border="2" width="40%">
+      <tr>
+        <td align="center">Lo division</td>
+        <td align="center">Hi division</td>
+      </tr>
+      <tr>
+        <td align="center">1</td>
+        <td align="center">2</td>
+      </tr>
+      <tr>
+        <td align="center">2</td>
+        <td align="center">5</td>
+      </tr>
+      <tr>
+        <td align="center">5</td>
+        <td align="center">10</td>
+      </tr>
+      <tr>
+        <td align="center">10</td>
+        <td align="center">20</td>
+      </tr>
+      <tr>
+        <td align="center">20</td>
+        <td align="center">50</td>
+      </tr>
+    </table>
+    <p>In the calibration routine the maximum capacity required to be entered is the High
+    range capacity. Note that if F2=1 the dummy zero will be applicable and you should enter
+    (Hi max divided by 10) as the Hi range capacity. </td>
+  </tr>
+  <tr>
+    <td><b>Example 1</b>: </td>
+    <td>Required 80t max; Low Range to 60t. Minimum Division 0.02t <p>F2=2; F11=1; F65=6000
+    (60.00); F66=0. Calibration d=2 (Low range); Maximum = 8000 (80.00). </td>
+  </tr>
+  <tr>
+    <td><b>Example 2</b>:</td>
+    <td>Required 80,000kg max; Low Range 60,000kg; Min. Div. 20kg <p>F2=1; F11=1; F65=6000
+    (6,0000/10); F66=0. Calibration d=2 (20/10); Maximum = 8000 (80,000/10). </td>
+  </tr>
+</table>
+
+</div>

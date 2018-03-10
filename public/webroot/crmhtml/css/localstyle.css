@@ -1,0 +1,554 @@
+header{
+	margin-bottom: 55px;
+}
+header .container{
+	padding-top: 50px;
+	border-bottom: 1px solid #d9d9d9
+}
+.header-user{
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    border: 1px solid #d9d9d9;
+    color: #2457a6;
+    padding: 13px 50px;
+    background-image: url('../img/member-icon.jpg');
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 17px 18px;
+}
+#logo{
+	padding-left: 15px;
+	float: left;
+}
+nav#header-nav {
+    padding-top: 37px;
+    padding-left: 45px;
+    margin-bottom: 15px;
+}
+nav#header-nav ul{
+	list-style: none;
+}
+nav#header-nav ul.level0 > li{
+	display: inline-block;
+	padding: 0 8px;
+}
+nav#header-nav ul.level0 > li.level1 > a{
+    color: #2b2b2b;
+    padding: 15px 20px 15px 15px;
+}
+nav#header-nav ul.level0 > li.level1 > a span{
+	display: inline-block;
+}
+nav#header-nav ul.level0 > li.level1 > a i{
+    padding-left: 5px;
+    font-size: 9px;
+    vertical-align: top;
+    padding-top: 3px;
+    padding-right: 15px;
+}
+nav#header-nav .parent:hover  a.nav-title{
+	text-decoration: none;
+	color: #fff;
+	background-color: #3c7ada
+}
+nav#header-nav .parent{
+    position: relative;
+}
+nav#header-nav ul.level2{
+	display: none;
+    z-index: 9;
+    padding: 10px 0px;
+    background-color: #3c7ada;
+    color: #fff;
+    top: 30px;
+    min-width: 150px;
+    position: absolute;
+}
+nav#header-nav ul.level2 a{
+	color: #fff;
+	font-size: 13px;
+	display: block;
+	padding: 10px 35px 10px 15px;
+	white-space: nowrap;
+}
+nav#header-nav ul.level2 a:hover{
+	background-color: #4c92ff;
+	text-decoration: none;
+}
+footer{
+	text-align: center;
+	padding: 30px 0 50px;
+}
+footer .copyright{
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 5px;
+}
+footer .footer-nav{
+	position: relative;
+}
+footer .footer-nav .divider{
+	position: absolute;
+	width: 1px;
+	height: 8px;
+	top: 5px;
+	background-color: #2b2b2b;
+}
+footer .footer-nav .divider-1{
+	left: 447px;
+}
+footer .footer-nav .divider-2{
+	left: 527px;
+}
+footer .footer-nav .divider-3{
+	left: 715px;
+}
+footer ul#footer-nav li{
+	display: inline-block;
+}
+footer ul#footer-nav li a{
+	font-size: 13px;
+	padding: 0 20px;
+}
+/***********************   home page start   *********************/
+/***********************   home page start   *********************/
+.banner{
+	margin-bottom: 30px;
+	background-image: url('../img/banner.jpg');
+	height: 218px;
+}
+.block{
+	border: 1px solid #d9d9d9;
+	border-radius: 15px;
+	padding: 35px 25px;
+	position: relative;
+}
+.category-menu{
+	margin-bottom: 30px;
+}
+.category-menu .wrapper{
+	border: 1px solid #d9d9d9;
+	border-radius: 15px;
+	height: 120px;
+	padding: 30px 15px;
+}
+.category-menu div.img{
+	float: left;
+	width: 50%;
+}
+.category-menu span{
+    float: left;
+    width: 90px;
+    display: block;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.category-menu-3 span{
+	margin-top: 23px;
+}
+.category-menu-5 span{
+	margin-top: 12px;
+}
+.category-menu-6 span{
+	margin-top: 21px;
+}
+.category-menu-1 img{
+	width: 73px;
+	height: 55px;
+}
+.category-menu-2 img{
+	width: 86px;
+	height: 69px;
+}
+.category-menu-3 img{
+	width: 68px;
+	height: 74px;
+}
+.category-menu-4 img{
+	width: 63px;
+	height: 63px;
+}
+.category-menu-5 img{
+	width: 80px;
+	height: 66px;
+}
+.category-menu-6 img{
+	width: 80px;
+	height: 67px;
+}
+.category-menu-5, .category-menu-6{
+	margin-bottom: 0
+}
+.category-menu span{
+	color: #2b2b2b;
+	font-weight: 700;
+}
+.dealer-home-block{
+	position: relative;
+	padding: 35px 10px;
+}
+.dealer-home-block .divider{
+	position: absolute;
+	height: 420px;
+	background-color: #d9d9d9;
+	width: 1px;
+    left: 51.5%;
+}
+.dealer-home-block .last .wrapper{
+	padding: 0 20px 0 55px;
+}
+label{
+	width: 85px;
+}
+input{
+	max-width: 295px;
+	width: calc(100% - 183px);
+	height: 33px;
+	border: 1px solid #d9d9d9;
+	font-size: 12px;
+	color: #9c9c9c;
+	padding-left: 15px;
+	margin-right: 5px;
+}
+.search-btn{
+	width: 85px;
+	height: 33px;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 0;
+	background-color: #3c7ada;
+	border-radius: 0;
+}	
+.search-stock{
+	padding-bottom: 30px;
+	border-bottom: 1px solid #d9d9d9;
+	margin-bottom: 30px;
+}
+.search-spare-parts{
+	margin-bottom: 25px;
+}
+.category-list{
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-right: 0
+}
+/***********************   home page end   *********************/
+/***********************   home page end   *********************/
+/***********************   technical doucment page start   *********************/
+/***********************   technical doucment page start   *********************/
+.breadcrumb a{
+	font-weight: 700;
+	color: #848484;
+}
+.breadcrumb a.current{
+	color: #2b2b2b;
+}
+.tech-block{
+	min-height: 500px;
+}
+.ul-list ul{
+	list-style: disc;
+}
+.ul-list ul li{
+	color: #2b2b2b;
+	padding-bottom: 10px;
+}
+.ul-list ul li a{
+	color: #175ac3;
+}
+/***********************   technical doucment page end   *********************/
+/***********************   technical doucment page end   *********************/
+/***********************   stock enquiry page start   *********************/
+/***********************   stock enquiry page start   *********************/
+.stock-list{
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	border-right: 0
+}
+.stock-block .stock-form {
+	margin-bottom: 30px;
+}
+.stock-block .stock-form h2{
+	margin-bottom: 25px;
+}
+.stock-list{
+	text-align: center;
+	max-width: 477px;
+}
+.stock-list .table-title{
+	background-color: #fffed3;
+	color: #d90000;
+}
+.stock-list a{
+	color: #2b2b2b;
+}
+/***********************   stock enquiry page end   *********************/
+/***********************   stock enquiry page end   *********************/
+/***********************   Manual page start   *********************/
+/***********************   Manual page start   *********************/
+.tab{
+	display: none;
+}
+.active{
+	display: block;
+}
+.tab-lists{
+
+}
+.tab-lists li{
+	display: inline-block;
+	padding: 10px 25px;
+	border: 1px solid #d9d9d9;
+	background-color: #f3f3f3;
+	margin-bottom: 50px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+.tab-lists li.active{
+	color: #fff;
+	background-color: #3c7ada;
+}
+/***********************   Manual page end   *********************/
+/***********************   Manual page end   *********************/
+/***********************   login page start   *********************/
+/***********************   login page start   *********************/
+.login-form{
+	position: fixed;
+	width: 515px;
+	height: 400px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+}
+.login-form label{
+	width: 150px;
+	text-align: right;
+	font-weight: 700;
+}
+.login-logo{
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.login-form h1{
+	margin-bottom: 20px;
+}
+.login-form h2{
+	margin-bottom: 30px;
+}
+.input-field{
+	margin-bottom: 10px;
+}
+.input-field input{
+	padding-left: 15px;
+	margin-left: 15px;
+	max-width: 190px;
+	color: #2b2b2b;
+	font-size: 14px;
+}
+button#login-button{
+	background-color: #3c7ada;
+	color: #fff;
+	border-radius: 0;
+	width: 190px;
+	margin-left: 165px;
+	height: 40px;
+	margin-top: 30px;
+}
+/***********************   login page end   *********************/
+/***********************   login page end   *********************/
+/***********************   install disgram page start   *********************/
+/***********************   install disgram page start   *********************/
+.install-table{
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+p.msg{
+	margin-bottom: 0;
+	font-weight: 700;
+}
+p.msg span{
+	background-color: #d90000;
+	color: #fff;
+	margin-right: 10px;
+}
+.install-table-cell{
+	vertical-align: middle;
+}
+.add-dealer-form{
+	float: right;
+}
+/***********************   install disgram page end   *********************/
+/***********************   install disgram page end   *********************/
+/***********************   add dealer page start   *********************/
+/***********************   add dealer page start   *********************/
+.red-p{
+	color: #d90000;
+}
+.add-dealer-block {
+	min-height: 500px;
+}
+.add-dealer-block .divider{
+    position: absolute;
+    height: 280px;
+    background-color: #d9d9d9;
+    width: 1px;
+    left: 53.5%;
+    top: 115px;
+}
+.add-dealer-form h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.add-dealer-form label{
+	text-align: right;
+	width: 110px;
+	font-weight: 700;
+}
+.add-dealer-form .input-field input{
+	max-width: 240px;
+}
+.input-field .form-subtitle{
+	font-weight: 700;
+	margin-left: 15px;
+	display: inline-block;
+}
+.fake-radios{
+	display: inline-block;
+}
+.fake-radios .radio{
+	display: inline-block;
+	border: 2px solid #d9d9d9;
+	border-radius: 50%;
+	width: 17px;
+	height: 17px;
+	margin: 0;
+    vertical-align: bottom;
+    margin-left: 20px;
+    margin-right: 3px;
+}
+.fake-radios .radio-label{
+	display: inline-block;
+	font-weight: 700;
+}
+.fake-radios .fake-radio{
+	display: inline-block;
+}
+.fake-radios .radio.checked{
+	border: 5px solid #3c7ada;
+}
+.fake-radio-input-field{
+	position: relative;
+	margin: 20px 0;
+}
+.fake-radio-input-field input{
+    position: absolute;
+    height: 20px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 2;
+    top: 0;
+}
+.fake-radio-input-field input#yes-radio{
+	left: 258px;
+}
+.fake-radio-input-field input#no-radio{
+	left: 332px;
+}
+.status-select{
+	height: 30px;
+    width: 240px;
+    padding-left: 15px;
+    margin-left: 15px;
+    border: 1px solid #d9d9d9;
+    background-image: url('../img/arrows.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+/***********************   add dealer page end   *********************/
+/***********************   add dealer page end   *********************/
+/***********************   dealer report page start   *********************/
+/***********************   dealer report page start   *********************/
+.dealer-reports{
+	border: 1px solid #d9d9d9;
+	border-bottom: 0;
+	overflow: auto;
+}
+.dealer-report{
+	border-bottom: 1px solid #d9d9d9;
+	overflow: auto;
+}
+.dealer-report-form button{
+	float: right;
+	width: 80px;
+	border-radius: 0;
+	font-size: 12px;
+	background-color: #3c7ada;
+	color: #fff;
+	margin-top: 15px;
+}
+.dealer-report-content{
+	float: left;
+}
+.dealer-report-title{
+	border-right: 1px solid #d9d9d9;
+}
+.dealer-report-title h2{
+	line-height: 60px;
+	margin-bottom: 0;
+}
+.dealer-report-form{
+	line-height: 60px;
+}
+.dealer-report-content input#access-number{
+	width: 60px;
+	margin-left: 5px;
+}
+.dealer-report-content input#activity-company{
+	width: 135px;
+	margin-left: 5px;
+}
+.dealer-list-table-cell{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.dealer-list-table-cell a{
+	color: #2b2b2b;
+	display: block;
+	width: 100%;
+}
+.dealer-list-table-cell.action{
+	text-align: center;
+}
+.dealer-list-table{
+	border-top: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+}
+.dealer-list-table-row:nth-child(even){
+	background-color: #ebebeb;
+}
+/***********************   dealer report page end   *********************/
+/***********************   dealer report page end   *********************/
+/***********************   dealer search page start   *********************/
+/***********************   dealer search page start   *********************/
+.dealer-search-form{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+#dealer-search-form button{
+	width: 80px;
+	border-radius: 0;
+	font-size: 12px;
+	background-color: #3c7ada;
+	color: #fff;
+}
+/***********************   dealer search page end   *********************/
+/***********************   dealer search page end   *********************/

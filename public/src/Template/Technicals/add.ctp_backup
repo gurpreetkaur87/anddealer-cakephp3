@@ -1,0 +1,23 @@
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('List Technicals'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Parent Technicals'), ['controller' => 'Technicals', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Parent Technical'), ['controller' => 'Technicals', 'action' => 'add']) ?></li>
+    </ul>
+</nav>
+<div class="technicals form large-9 medium-8 columns content">
+    <?= $this->Form->create($technical) ?>
+    <fieldset>
+        <legend><?= __('Add Technical') ?></legend>
+        <?php
+            echo $this->Form->input('parent_id', ['options' => $parentTechnicals]);
+            echo $this->Form->input('name');
+            echo $this->Form->input('description');
+            echo $this->Form->input('file_name');
+            echo $this->Form->input('is_new');
+        ?>
+    </fieldset>
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
+</div>

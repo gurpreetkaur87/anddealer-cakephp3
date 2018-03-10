@@ -1,0 +1,43 @@
+<div class="content">
+  <h2>Dealer Information Search</h2>
+  <p>The search system allows you to search for a dealer by Company Code, First Name, Last Name and Username, all from the one search field. Simply enter the term you want to search on and the system will return a list of dealers that match term. The system will also accept parts of words or names and will return results based on the closest matches that can be found.</p>
+  <h2>Search</h2>
+  <form method="post" action="web.php?p=10001">
+    <input type="hidden" name="m" value="search"/>
+    <input type="text" name="search" size="40"/>
+    <input type="submit" name="submit" value="Search"/>
+  </form>
+  <h2>Search Results</h2>
+  <p>This information is sorted alphabetically by the Code and then Username</p>
+  <table class="dlist" style="text-align: center;" border="0" cellspacing="0" cellpadding="2">
+    <thead>
+      <tr>
+        <th width="6%" colspan="2">&nbsp;</th>
+<!--        <th width="3%">ID</th>-->
+        <th width="5%">Code</th>
+        <th width="18%">User Name</th>
+        <th width="15%">First Name</th>
+        <th width="15%">Last Name</th>
+        <th width="35%">Company</th>
+        <th width="3%">&nbsp;</th>
+        <th width="3%">&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- BEGIN dlist -->
+      <tr class="{row}">
+        <td><a href="web.php?p=10001&m=edit&c={ccustno}&u={cusername}" style="font-size: small;"><img src="{img}/book_edit.png" title="Edit" alt="Edit" width="16" height="16" border="0"/></a></td>
+        <td><a href="web.php?p=10001&m=details&c={ccustno}&u={cusername}" style="font-size: small;"><img src="{img}/book_open.png" title="Details" alt="Details" width="16" height="16" border="0"/></a></td>
+<!--        <td>{cid}</td>-->
+        <td>{ccustno}</td>
+        <td>{cusername}</td>
+        <td>{cfirstname}</td>
+        <td>{clastname}</td>
+        <td>{ccompany}</td>
+        <td><input type="checkbox" {iinactive} disabled/></td>
+        <td><a href="web.php?p=10001&m=delete&c={ccustno}&u={cusername}" style="font-size: small;"><img src="{img}/delete.png" title="Delete User" alt="Delete User" width="16" height="16" border="0"/></a></td></td>
+      </tr>
+      <!-- END dlist -->
+    </tbody>
+  </table>
+</div>

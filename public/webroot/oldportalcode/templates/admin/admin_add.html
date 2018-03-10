@@ -1,0 +1,75 @@
+<div class="content">
+<h2>Add a New Dealer</h2>
+  <div style="float: left; width: 40%; border: 1px solid black;padding: 10px; margin-right: 10px; font-size: small;">
+    <h3>Instructions</h3>
+    <p>A dealer must already have an appropriate Company Code setup in Vantage before they can be added to this system.</p>
+    <p>All Fields are Mandatory, Please ensure you enter the correct data in each field.</p>
+    <p style="color: red;">There is no need to email the information to the user as the system will automatically send an email containing all of the users login information to the email address provided.</p>
+    <p style="color: red;">If a dealer has complained that they cannot access the site, please check to see if they are listed before simply adding them as a new user.</p>
+  </div>
+  <div>
+  <script language="javascript">
+    function enableField()
+    {
+      document.add.cpass.disabled=false;
+    }
+    function disableField()
+    {
+      document.add.cpass.disabled=true;
+    }
+  </script>
+    <form action="web.php?p=10001" method="POST" name="add">
+      <input type="hidden" name="m" value="add"/>
+      <table class="cap_option" border="0" cellspacing="0" cellpadding="2">
+        <tr>
+          <th colspan="2">Dealer Details</th>
+        </tr>
+        <tr>
+          <td>Company Code:</td>
+          <td><input type="text" name="ccustno"/></td>
+        </tr>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="cfirstname"/></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="clastname"/></td>
+        </tr>
+<!--        <tr>
+          <td>Username:</td>
+          <td><input type="text" name="cusername"/></td>
+        </tr>-->
+        <tr>
+          <td>Email:</td>
+          <td><input type="text" name="cemail"/></td>
+        </tr>
+        <tr>
+          <td>Pasword:</td>
+          <td>Auto-Generate: Yes <input type="radio" name="autogen" value="Yes" checked onclick="javascript:document.add.cpass.disabled=true">
+                              No <input type="radio" name="autogen" value="No" onclick="javascript:document.add.cpass.disabled=false"></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <input type="text" name="cpass" size="5" disabled/>
+          </td>
+        </tr>
+        <tr>
+          <td>Status:</td>
+          <td>
+            <select name="cstatus"/>
+              <option>Active</option>
+              <option>Inactive</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" value="Add Dealer"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>

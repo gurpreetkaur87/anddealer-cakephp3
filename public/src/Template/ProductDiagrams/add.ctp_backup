@@ -1,0 +1,55 @@
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('List Product Diagrams'), ['action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('List Parent Product Diagrams'), ['controller' => 'ProductDiagrams', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Parent Product Diagram'), ['controller' => 'ProductDiagrams', 'action' => 'add']) ?></li>
+    </ul>
+</nav>
+<div class="productDiagrams form large-9 medium-8 columns content">
+    <?= $this->Form->create($productDiagram) ?>
+    <fieldset>
+        <legend><?= __('Add Product Diagram') ?></legend>
+        <?php
+            echo $this->Form->input('parent_id', ['options' => $parentProductDiagrams]);
+            echo $this->Form->input('name');
+            echo $this->Form->input('file_name');
+        ?>
+    </fieldset>
+    <?= $this->Form->button(__('Submit')) ?>
+    <?= $this->Form->end() ?>
+</div>
+var jump=function(e)
+{
+   if (e){
+       e.preventDefault();
+       var target = $(this).attr("href");
+   }else{
+       var target = location.hash;
+   }
+
+   $('html,body').animate(
+   {
+       scrollTop: $(target).offset().top
+   },2000,function()
+   {
+       location.hash = target;
+   });
+
+}
+
+$('html, body').hide();
+
+$(document).ready(function()
+{
+    $('a[href^=#]').bind("click", jump);
+
+    if (location.hash){
+        setTimeout(function(){
+            $('html, body').scrollTop(0).show();
+            jump();
+        }, 0);
+    }else{
+        $('html, body').show();
+    }
+});

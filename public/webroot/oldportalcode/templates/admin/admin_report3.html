@@ -1,0 +1,30 @@
+<div class="content">
+  <h2>Most Active Users by Company Report</h2>
+  <p>
+    <a href="web.php?p=10001&m=report">Return to Report List</a>
+  </p>
+<!--  <style>
+    tr.item:hover{color:lime;background:red;}
+  </style>-->
+  <table style="border: 2px solid black;" border="0" cellspacing="0" cellpadding="3px">
+    <tr style="background-color: #99CCFF">
+      <th>Code</th>
+      <th>Username</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Logins</th>
+    </tr>
+    <!-- BEGIN dlist -->
+    <tr class="{row}">
+      <td style="border-bottom: 1px solid #dddddd;">{ccustno}</td>
+      <td style="border-bottom: 1px solid #dddddd;"><a href="web.php?p=10001&m=details&c={ccustno}&u={cusername}">{cusername}</a></td>
+      <td style="border-bottom: 1px solid #dddddd;">{cfirstname}</td>
+      <td style="border-bottom: 1px solid #dddddd;">{clastname}</td>
+      <td style="text-align: center;border-bottom: 1px solid #dddddd;">{nwebaccess}</td>
+    </tr>
+    <!-- END dlist -->
+  </table>
+  <p>
+    {no_results}
+  </p>
+</div>

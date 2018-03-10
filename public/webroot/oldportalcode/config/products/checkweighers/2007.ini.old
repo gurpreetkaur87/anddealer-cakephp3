@@ -1,0 +1,72 @@
+[misc]
+product_title="Multi-Weigher"
+brochure="Multi-Weigher"
+prod_img_alt="Multi-Weigher"
+prod_img_title="Multi-Weigher"
+product_img="SW-Multi-Weigher.jpg"
+p_img_width="250"
+p_img_height="250"
+
+;Raw Information Regarding this product
+[raw]
+1=true
+2="
+<p>
+The A&D Mercury software package Multi-Weigher is designed to run on a Microsoft
+Windows operating system. The Multi-Weigher software package was written using
+Borland Delphi, the software was designed to meet the growing needs and requirements
+for weight data capture in industry today.
+</p>
+<p>
+The Multi-Weigher software is capable of monitoring, checking and grading the weight
+data of various products that are passed over the connected scales.
+</p>
+<ul>
+  <li><span class="bold">Operating Systems</span><br/>
+The Multi-Weigher software can run on any Microsoft Operating Systems like:
+Windows 95, 98, 2000, NT, XP Professional and XP Home Edition.
+  </li>
+  <li><span class="bold">Visually Appealing</span><br/>
+The software utilises soft Pascal colors in bold text for the identity of the target, under,
+over and erroneous weights. OK weights in olive, Under in orange, Over in red and
+Errors are inverse solid red blocks.
+  </li>
+  <li>
+    <span class="bold">Various Products</span><br/>
+The Multi-Weigher software can be used to collect weight data from: Platform Scales,
+Scientific Balances, Weight Indicators, Checkweighers, Counting Scales and other
+weighing devices.
+  </li>
+</ul>
+<ul>
+  <li>
+    <span class="bold">Various Protocols</span><br/>
+The data string input to the computer from the weight scale can be modified to suit
+any piece of weighing equipment, from any scale manufacturer as long as the scale is
+fitted with a serial interface. The serial interface can be any one of the following:
+    <ol>
+      <li>RS232 Serial Output and Serial I/O.</li>
+      <li>RS485 Serial Output and Serial I/O.</li>
+      <li>RS422 Serial Output and Serial I/O.</li>
+    </ol>
+  </li>
+  <li>
+    <span class="bold">Data Bases</span><br/>
+The Multi-Weigher software package stores its data in a comma delimited text format
+which can be easily read by products like MS Excel. The data recorded is: Weight, Time,
+Date, Product, Operator, Station and Errors. These records can either be printed or
+viewed on the monitor screen.
+  </li>
+  <li>
+    <span class="bold">Reports</span><br/>
+Reports can be viewed, printed and sorted by Date, Month, Operator, Product, Table,
+Station, Transaction, Transaction summary or Custom Extra data fields.
+  </li>
+  <li>
+<span class="bold">Checkweigher</span><br/>
+The Multi-Weigher software can be optioned up-graded to included data capture from
+either the ADM Dolphin AD4404 or ADM Dolphin AD4820 Checkweighers.
+RsCom transmits the weighing data to your computer using a text file format, and allows "Transmit Commands" to control the balance. Transmit Commands include: Calibrate, On/Off, Print, Query (for "transmit") weight data, Re-zero, Range, Sample, Mode & Zero. When used with the balance functions, you can output/print the GLP data to a PC printer directly, without any software application.
+  </li>
+</ul>
+"

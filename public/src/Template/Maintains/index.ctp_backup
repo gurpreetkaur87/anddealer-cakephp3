@@ -1,0 +1,47 @@
+<nav class="large-3 medium-4 columns" id="actions-sidebar">
+    <ul class="side-nav">
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('New Maintain'), ['action' => 'add']) ?></li>
+    </ul>
+</nav>
+<div class="maintains index large-9 medium-8 columns content">
+    <h3><?= __('Maintains') ?></h3>
+    <table cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <!--th><?= $this->Paginator->sort('id') ?></th>
+                <th><?= $this->Paginator->sort('parent_id') ?></th-->
+                <th><?php // $this->Paginator->sort('name') ?></th>
+                <!--th><?= $this->Paginator->sort('file_name') ?></th>
+                <th><?= $this->Paginator->sort('created') ?></th>
+                <th class="actions"><?= __('Actions') ?></th-->
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($maintains as $maintain): 
+			if($maintain->parent_id == 0) {
+			?>
+            <tr>
+                <!--td><?= $this->Number->format($maintain->id) ?></td>
+                <td><?= $maintain->has('parent_maintain') ? $this->Html->link($maintain->parent_maintain->name, ['controller' => 'Maintains', 'action' => 'view', $maintain->parent_maintain->id]) : '' ?></td-->
+                <td><a href="/maintains/view/<?= $this->Number->format($maintain->id) ?>"><?= h($maintain->name) ?></a></td>
+                <!--td><?= h($maintain->file_name) ?></td>
+                <td><?= h($maintain->created) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('View'), ['action' => 'view', $maintain->id]) ?>
+                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $maintain->id]) ?>
+                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $maintain->id], ['confirm' => __('Are you sure you want to delete # {0}?', $maintain->id)]) ?>
+                </td-->
+            </tr>
+            <?php } endforeach; ?>
+        </tbody>
+    </table>
+    <!--div class="paginator">
+        <ul class="pagination">
+            <?= $this->Paginator->prev('< ' . __('previous')) ?>
+            <?= $this->Paginator->numbers() ?>
+            <?= $this->Paginator->next(__('next') . ' >') ?>
+        </ul>
+        <p><?= $this->Paginator->counter() ?></p>
+    </div-->
+</div>

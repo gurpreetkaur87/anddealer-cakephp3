@@ -1,0 +1,36 @@
+<div class="content">
+  <h2>Dealer List</h2>
+  <p style="color: red; font-weight: bold;">Looking for a particular dealer? Try the search function from the meu on the left, it really does work!</p>
+  <p>This information is sorted alphabetically by the Code and then Username</p>
+  <table class="dlist" style="" border="0" cellspacing="0" cellpadding="2">
+    <thead>
+      <tr>
+        <td width="6%" colspan="2">&nbsp;</td>
+<!--        <td width="3%">ID</td>-->
+        <td width="5%">Code</td>
+        <td width="18%">User Name</td>
+        <td width="15%">First Name</td>
+        <td width="15%">Last Name</td>
+        <td width="35%">Company</td>
+        <td width="3%">&nbsp;</td>
+        <td width="3%">&nbsp;</td>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- BEGIN dlist -->
+      <tr class="{row}">
+        <td><a href="web.php?p=10001&m=edit&c={ccustno}&u={cusername}" style="font-size: small;"><img src="{img}/book_edit.png" title="Edit" alt="Edit" width="16" height="16" border="0"/> </a></td>
+        <td><a href="web.php?p=10001&m=details&c={ccustno}&u={cusername}" style="font-size: small;"><img src="{img}/book_open.png" title="Details" alt="Details" width="16" height="16" border="0"/></a></td>
+<!--        <td>{cid}</td>-->
+        <td>{ccustno}</td>
+        <td>{cusername}</td>
+        <td>{cfirstname}</td>
+        <td>{clastname}</td>
+        <td>{ccompany}</td>
+        <td><input type="checkbox" {iinactive} disabled/></td>
+        <td><a href="web.php?p=10001&m=delete&c={ccustno}&u={cusername}" style="font-size: small;"><img src="{img}/delete.png" title="Delete User" alt="Delete User" width="16" height="16" border="0"/></a></td></td>
+      </tr>
+      <!-- END dlist -->
+    </tbody>
+  </table>
+</div>

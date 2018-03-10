@@ -1,0 +1,49 @@
+<div class="content">
+  <h2>Edit Dealer Information</h2>
+  <p>
+    Please note that changes made here only affect the Web Dealer Access information. If you need to change a dealers Company information in Vantage, it must be done from within Vantage
+  </p>
+
+  <form method="post" action="web.php?p=10001">
+    <input type="hidden" name="m" value="edit"/>
+    <table class="cap_option" border="0" cellspacing="0" cellpadding="2">
+      <tr>
+        <th>Dealer Code:</th>
+        <td><input type="text" name="ccustno1" value="{ccustno}" disabled/><input type="hidden" name="ccustno" value="{ccustno}"/></td>
+		
+      </tr>
+      <tr>
+        <th>Username:</th>
+        <td><input type="text" name="cusername" value="{cusername}"/><input type="hidden" name="corigusername" value="{cusername}"/></td>
+      </tr>
+      <tr>
+        <th>Pin Number:</th>
+        <td><input type="text" name="cpassword" value="{cpassword}"/></td>
+      </tr>
+      <tr>
+        <th>First Name:</th>
+        <td><input type="text" name="cfirstname" value="{cfirstname}"/></td>
+      </tr>
+      <tr>
+        <th>Last Name:</th>
+        <td><input type="text" name="clastname" value="{clastname}"/></td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td><input type="text" name="cemail" value="{cemail}" size="30"/></td>
+      </tr>
+      <tr>
+        <th>Disabled:</th>
+        <td><input type="checkbox" name="iinactive" {iinactive}/></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td style="text-align: right;"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+    <ul>
+      <li><a href="web.php?p=10001">Dealer List</a></li>
+      <li><a href="web.php?p=10001&m=details&c={ccustno}&u={cusername}">View Details</a></li>
+    </ul>
+  </form>
+</div>

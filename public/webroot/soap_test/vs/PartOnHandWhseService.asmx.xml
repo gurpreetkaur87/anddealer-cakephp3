@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://epicor.com/webservices/" xmlns:s1="http://epicor.com/schemas" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://epicor.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:s0="http://epicor.com/webservices/" xmlns:vantageSchema="http://epicor.com/schemas" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" elementFormDefault="qualified" targetNamespace="http://epicor.com/webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://epicor.com/schemas"/>
+      <xs:import namespace="http://epicor.com/schemas"/>
+      <xs:element name="GetPartOnHandWhse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="CompanyID" type="xs:string"/>
+            <xs:element minOccurs="0" maxOccurs="1" name="cPartNum" type="xs:string"/>
+            <xs:element minOccurs="0" maxOccurs="1" name="cPlant" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetPartOnHandWhseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="GetPartOnHandWhseResult" type="vantageSchema:PartOnHandWhseDataSetType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <s:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:s0="http://epicor.com/webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" elementFormDefault="unqualified" targetNamespace="http://epicor.com/schemas">
+      <xs:complexType name="PartOnHandWhseDataSetType">
+        <xs:sequence>
+          <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PartOnHandWhseDataSet">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="PartOnHandWhse">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Company.Company" name="Company" type="xs:string"/>
+                      <xs:element msdata:Caption="Part" msprop:Format="x(20)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Part.PartNum" name="PartNum" type="xs:string"/>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Plant.Plant" name="Plant" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Warehse.WarehouseCode" name="WarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="WarehouseDesc" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(10)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="WhseBin.BinNum" minOccurs="0" name="PrimaryBinNum" type="xs:string"/>
+                      <xs:element msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="AllocQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Invty U/M" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Part.IUM" minOccurs="0" name="IUM" type="xs:string"/>
+                      <xs:element msdata:Caption="Qty on Hand" msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="QuantityOnHand" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Counted" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="CountedDate" type="xs:dateTime"/>
+                      <xs:element msdata:Caption="Primary" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="IsPrimaryWarehouse" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowIdent" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowMod" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="DBRowIdent" type="xs:base64Binary"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="PartOnHandBin">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Company.Company" name="Company" type="xs:string"/>
+                      <xs:element msdata:Caption="Part" msprop:Format="x(20)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Part.PartNum" name="PartNum" type="xs:string"/>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Plant.Plant" name="Plant" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Warehse.WarehouseCode" name="WarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(5)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="WhseBin.BinNum" name="BinNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Lot Number" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="PartLot.LotNum" minOccurs="0" name="LotNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Dimension" msprop:Format="x(6)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="PartDim.DimCode" minOccurs="0" name="DimCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Qty on Hand" msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="QuantityOnHand" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Non Nettable" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="NonNettable" type="xs:boolean"/>
+                      <xs:element msdata:Caption="Bin Description" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="BinDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="UM" msprop:Format="x(2)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="UnitOfMeasure" type="xs:string"/>
+                      <xs:element msdata:Caption="Primary" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="IsPrimaryBin" type="xs:string"/>
+                      <xs:element msdata:Caption="Seq" msprop:Format="&gt;&gt;&gt;9" msprop:ReadOnly="True" msprop:External="True" msprop:Like="OrderMsc.SeqNum" name="SeqNum" type="xs:int"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowIdent" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowMod" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="DBRowIdent" type="xs:base64Binary"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="PartBinInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element msprop:Format="x(8)" msprop:Like="Company.Company" name="Company" type="xs:string"/>
+                      <xs:element msdata:Caption="Part" msprop:Format="x(50)" msprop:Like="Part.PartNum" name="PartNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(8)" msprop:Like="Warehse.WarehouseCode" name="WarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(10)" msprop:Like="WhseBin.BinNum" name="BinNum" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character01" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character02" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character03" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character04" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character05" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character06" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character07" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character08" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character09" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character10" type="xs:string"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number01" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number02" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number03" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number04" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number05" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number06" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number07" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number08" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number09" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number10" type="xs:decimal"/>
+                      <xs:element minOccurs="0" name="Date01" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date02" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date03" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date04" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date05" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="CheckBox01" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox02" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox03" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox04" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox05" type="xs:boolean"/>
+                      <xs:element msdata:Caption="Minimum" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="MinimumQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Maximum" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="MaximumQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Safety Stock" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="SafetyQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="KanBan Code" msprop:Format="X(8)" msprop:Like="KanBanType.KBCode" minOccurs="0" name="KBCode" type="xs:string"/>
+                      <xs:element msdata:Caption="PO" msprop:Format="&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;9" msprop:Like="POHeader.PONum" minOccurs="0" name="KBPONUM" type="xs:int"/>
+                      <xs:element msdata:Caption="Line" msprop:Format="&gt;&gt;9" msprop:Like="PODetail.POLine" minOccurs="0" name="KBPOLine" type="xs:int"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(8)" msprop:Like="Warehse.WarehouseCode" minOccurs="0" name="KBWarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(10)" msprop:Like="WhseBin.BinNum" minOccurs="0" name="KBBinNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Plant" msprop:Format="x(8)" msprop:Like="Plant.Plant" minOccurs="0" name="KBPlant" type="xs:string"/>
+                      <xs:element msdata:Caption="On Hand Qty." msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="OnhandQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Kanban Quantity" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="KBQty" type="xs:decimal"/>
+                      <xs:element msprop:Format="x(8)" msprop:External="True" msprop:Like="Plant.Plant" name="Plant" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="X(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="BinNumDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="X(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBBinNumDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="Action" msprop:Format="X(10)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBCodeKBActionCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="X(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBCodeKBDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="Name" msprop:Format="x(50)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBPlantName" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBWarehouseCodeDescription" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowIdent" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowMod" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="DBRowIdent" type="xs:base64Binary"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </s:schema>
+    <s:schema xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:s0="http://epicor.com/webservices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" elementFormDefault="unqualified" targetNamespace="http://epicor.com/schemas">
+      <xs:complexType name="PartOnHandWhseDataSetType">
+        <xs:sequence>
+          <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="PartOnHandWhseDataSet">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="PartOnHandWhse">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Company.Company" name="Company" type="xs:string"/>
+                      <xs:element msdata:Caption="Part" msprop:Format="x(20)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Part.PartNum" name="PartNum" type="xs:string"/>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Plant.Plant" name="Plant" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Warehse.WarehouseCode" name="WarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="WarehouseDesc" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(10)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="WhseBin.BinNum" minOccurs="0" name="PrimaryBinNum" type="xs:string"/>
+                      <xs:element msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="AllocQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Invty U/M" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Part.IUM" minOccurs="0" name="IUM" type="xs:string"/>
+                      <xs:element msdata:Caption="Qty on Hand" msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="QuantityOnHand" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Counted" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="CountedDate" type="xs:dateTime"/>
+                      <xs:element msdata:Caption="Primary" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="IsPrimaryWarehouse" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowIdent" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowMod" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="DBRowIdent" type="xs:base64Binary"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="PartOnHandBin">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Company.Company" name="Company" type="xs:string"/>
+                      <xs:element msdata:Caption="Part" msprop:Format="x(20)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Part.PartNum" name="PartNum" type="xs:string"/>
+                      <xs:element msprop:Format="x(8)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Plant.Plant" name="Plant" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="Warehse.WarehouseCode" name="WarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(5)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="WhseBin.BinNum" name="BinNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Lot Number" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="PartLot.LotNum" minOccurs="0" name="LotNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Dimension" msprop:Format="x(6)" msprop:ReadOnly="True" msprop:External="True" msprop:Like="PartDim.DimCode" minOccurs="0" name="DimCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Qty on Hand" msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="QuantityOnHand" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Non Nettable" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="NonNettable" type="xs:boolean"/>
+                      <xs:element msdata:Caption="Bin Description" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="BinDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="UM" msprop:Format="x(2)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="UnitOfMeasure" type="xs:string"/>
+                      <xs:element msdata:Caption="Primary" msprop:Format="x(3)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="IsPrimaryBin" type="xs:string"/>
+                      <xs:element msdata:Caption="Seq" msprop:Format="&gt;&gt;&gt;9" msprop:ReadOnly="True" msprop:External="True" msprop:Like="OrderMsc.SeqNum" name="SeqNum" type="xs:int"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowIdent" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowMod" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="DBRowIdent" type="xs:base64Binary"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="PartBinInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element msprop:Format="x(8)" msprop:Like="Company.Company" name="Company" type="xs:string"/>
+                      <xs:element msdata:Caption="Part" msprop:Format="x(50)" msprop:Like="Part.PartNum" name="PartNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(8)" msprop:Like="Warehse.WarehouseCode" name="WarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(10)" msprop:Like="WhseBin.BinNum" name="BinNum" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character01" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character02" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character03" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character04" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character05" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character06" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character07" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character08" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character09" type="xs:string"/>
+                      <xs:element msprop:Format="x(16000)" minOccurs="0" name="Character10" type="xs:string"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number01" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number02" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number03" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number04" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number05" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number06" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number07" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number08" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number09" type="xs:decimal"/>
+                      <xs:element msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99999" minOccurs="0" name="Number10" type="xs:decimal"/>
+                      <xs:element minOccurs="0" name="Date01" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date02" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date03" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date04" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="Date05" type="xs:dateTime"/>
+                      <xs:element minOccurs="0" name="CheckBox01" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox02" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox03" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox04" type="xs:boolean"/>
+                      <xs:element minOccurs="0" name="CheckBox05" type="xs:boolean"/>
+                      <xs:element msdata:Caption="Minimum" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="MinimumQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Maximum" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="MaximumQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Safety Stock" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="SafetyQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="KanBan Code" msprop:Format="X(8)" msprop:Like="KanBanType.KBCode" minOccurs="0" name="KBCode" type="xs:string"/>
+                      <xs:element msdata:Caption="PO" msprop:Format="&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;9" msprop:Like="POHeader.PONum" minOccurs="0" name="KBPONUM" type="xs:int"/>
+                      <xs:element msdata:Caption="Line" msprop:Format="&gt;&gt;9" msprop:Like="PODetail.POLine" minOccurs="0" name="KBPOLine" type="xs:int"/>
+                      <xs:element msdata:Caption="Warehouse" msprop:Format="x(8)" msprop:Like="Warehse.WarehouseCode" minOccurs="0" name="KBWarehouseCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Bin" msprop:Format="x(10)" msprop:Like="WhseBin.BinNum" minOccurs="0" name="KBBinNum" type="xs:string"/>
+                      <xs:element msdata:Caption="Plant" msprop:Format="x(8)" msprop:Like="Plant.Plant" minOccurs="0" name="KBPlant" type="xs:string"/>
+                      <xs:element msdata:Caption="On Hand Qty." msprop:Format="-&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="OnhandQty" type="xs:decimal"/>
+                      <xs:element msdata:Caption="Kanban Quantity" msprop:Format="&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;&gt;,&gt;&gt;9.99" minOccurs="0" name="KBQty" type="xs:decimal"/>
+                      <xs:element msprop:Format="x(8)" msprop:External="True" msprop:Like="Plant.Plant" name="Plant" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="X(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="BinNumDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="X(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBBinNumDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="Action" msprop:Format="X(10)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBCodeKBActionCode" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="X(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBCodeKBDescription" type="xs:string"/>
+                      <xs:element msdata:Caption="Name" msprop:Format="x(50)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBPlantName" type="xs:string"/>
+                      <xs:element msdata:Caption="Description" msprop:Format="x(30)" msprop:ReadOnly="True" msprop:External="True" minOccurs="0" name="KBWarehouseCodeDescription" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowIdent" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="RowMod" type="xs:string"/>
+                      <xs:element msprop:SystemColumn="True" msprop:External="True" minOccurs="0" name="DBRowIdent" type="xs:base64Binary"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPartOnHandWhseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPartOnHandWhse"/>
+  </wsdl:message>
+  <wsdl:message name="GetPartOnHandWhseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPartOnHandWhseResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="PartOnHandWhseServiceSoap">
+    <wsdl:operation name="GetPartOnHandWhse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;br&gt;&lt;div&gt;The &lt;font color=#336699&gt;&lt;b&gt;&lt;i&gt;GetPartOnHandWhse&lt;/i&gt;&lt;/b&gt;&lt;/font&gt; Web method accepts the following arguments:&lt;ul type=circle style="padding-left:20px"&gt;&lt;li&gt;The Part Number (ParameterInfo)&lt;li&gt;The plant (ParameterInfo)&lt;/ul&gt;&lt;br&gt;&lt;b&gt;Returns:&lt;/b&gt;  The PartOnHandWhse data set (PartOnHandWhseDataSet)&lt;/div&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetPartOnHandWhseSoapIn"/>
+      <wsdl:output message="tns:GetPartOnHandWhseSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PartOnHandWhseServiceSoap" type="tns:PartOnHandWhseServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetPartOnHandWhse">
+      <soap:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PartOnHandWhseServiceSoap12" type="tns:PartOnHandWhseServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="GetPartOnHandWhse">
+      <soap12:operation soapAction="http://epicor.com/webservices/GetPartOnHandWhse" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PartOnHandWhseService">
+    <wsdl:port name="PartOnHandWhseServiceSoap" binding="tns:PartOnHandWhseServiceSoap">
+      <soap:address location="http://adel-web2/VantageServices/PartOnHandWhseService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="PartOnHandWhseServiceSoap12" binding="tns:PartOnHandWhseServiceSoap12">
+      <soap12:address location="http://adel-web2/VantageServices/PartOnHandWhseService.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

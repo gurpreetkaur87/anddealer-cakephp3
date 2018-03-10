@@ -1,0 +1,96 @@
+@import url('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css');
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td{
+	font-family: 'Droid Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-weight: 400;
+    font-size: 14px;
+}
+.container{
+	position: relative;
+}
+img{max-width:100%;}
+a{color:#175ac3;text-decoration:none;}
+a.btn{background-color:#003664;color:#ffffff;display:inline-block;padding:10px 0px;text-transform:uppercase;}
+.quote .btn{font-size:18px;padding:10px 50px;}
+.quote .btn:hover{background-color:#ee1b2e;}
+a:hover{text-decoration:underline;}
+div.link > a{display:inline-block;}
+h1, h2, h3, h4, h5, h6{font-weight:700;margin-top:0;}
+h1{font-size:16px;}
+h2{font-size:14px;}
+p{margin-bottom:20px;line-height:1.5;font-size: 14px;}
+body{line-height:normal;color:#2b2b2b;font-size: 14px;}
+ol{list-style-type:decimal;}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.transitions{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+.no-select {
+    user-select: none;
+    -o-user-select:none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none; 
+}
+.breadcrumb{
+    background-color: transparent;
+    border-radius: 0;
+    font-weight: 700;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 30px;
+}
+.mobile{
+    display: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.table-title{
+    padding: 10px 15px;
+    background-color: #cde0ff;
+    border-bottom: 1px solid #d9d9d9;
+    font-weight: 700;
+}
+.table{
+    display: table;
+    margin-bottom: 0;
+}
+.table-header{
+    display: table-header-group;
+    background-color: #e4efff;
+}
+.table-body{
+    display: table-row-group;
+}
+.table-row{
+    display: table-row;
+}
+.table-cell{
+    display: table-cell;
+    border-bottom: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    padding: 8px 15px;
+}
+.table-header .table-cell{
+    padding: 15px;
+}
+ul{
+    list-style: none;
+}

@@ -1,0 +1,71 @@
+<div class="content">
+	<div class="product_nav_buttons">
+	  	<a href="#" onclick="history.back()">&lt;- Previous Page<span>&nbsp;</span></a>
+	</div>
+
+	<h1>{product} Series{pcat} Pricing</h1>
+	<div style="float: right;background-color: #ccffcc;border: 1px solid black;width:155px;padding:1em;height: 360px;">
+		<h3>Extra's &amp; Freight</h3>
+		<p><b>Stamping:</b></p> 
+		<table width="160px">
+			<!--<tr>
+				<th width="60%" style="text-align: left;">Model:</th>
+				<th width="40%" style="text-align: left;">Fee**:</th>
+			</tr>
+				{stamping_item}
+			</tr>-->
+			<tr>
+				<td colspan="2"><span style="font-size: smaller; font-style: italic;">Stamping is available on Trade approved versions only. Please <a href="{url}web.php?p=1004">contact us</a> or use the Free Call button below for information on Trade Approved equipment and Stamping Fees</span></td>
+			</tr>
+			<!--<tr>
+				<td colspan="2"><span style="font-size: smaller; font-style: italic;">**Stamping Fee includes GST.</span></td>
+			</tr>-->
+		</table>
+		<p><b>Freight:</b></p>
+		<table width="160px">
+			<tr>
+				<td><span style="font-size: smaller; font-style: italic;">Freight for orders under $2,000 will incure a $30 inc GST Shipping Fee. Orders Over $2,000 will be shipped on a free in store basis.</span></td>
+			</tr>
+		</table>
+<!--		 ${freight} inc GST-->
+		<div style="float: right;width: 179px;">
+  			<script src="http://bellme.bellmedia.com/but01/bellme_api.php?bmId=ae3d4f35ab20580affb20e21ff9461cf" type="text/javascript"></script>
+  			<noscript><a href="http://www.bellmedia.com/index.php?page=dir&amp;sid=1235019575">A &amp; D Mecury Click To Free Call</a></noscript>
+		</div>
+	</div>
+	<div class="info_panel">
+		<h3>Capacities:</h3>
+		<table class="table" width="75%" cellspacing="0" cellpadding="2" border="0">
+		  	<thead>
+				<tr>
+		  			<td width="20%">Part Number</td>
+					<td width="20%">Model</td>
+					<td width="40%">Capacity</td>
+					<td width="20%">Price (inc GST)</td>
+				</tr>
+			</thead>
+			<tbody>
+		    	{capacity_item}
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="info_panel">
+		<h3>Options:</h3>
+		<table class="table" width="75%" cellspacing="0" cellpadding="2" border="0">
+			<thead>
+				<tr>
+					<td width="20%">Part Number</td>
+					<td width="20%">Part Code</td>
+					<td width="40%">Description</td>
+					<td width="20%">Price (inc GST)</td>
+				</tr>
+			</thead>
+			<tbody>
+	    	    {option_item}
+			</tbody>
+		</table>
+	</div>
+	
+	
+</div>

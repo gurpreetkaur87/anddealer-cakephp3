@@ -1,0 +1,104 @@
+<div class="content">
+<h3>Engineering Note # 4323_01</h3>
+
+
+<p><b>Equipment - AD4323 OP-07 Analogue option</b></p>
+
+
+<p>Problem</b> - Set up procedure not in the Maintenance manual</p>
+<b>
+
+<p>Procedure
+
+<ol TYPE="A">
+  </font><font FACE="Arial" SIZE="2">
+  <li>Connect </b>a 500ohm 1/2 watt, low temperature coefficient, resistor across the analogue
+    option output terminals.</li>
+  <b>
+  <li>Enter</b> Check Mode as below</li>
+</ol>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="7" WIDTH="568">
+  <tr>
+    <td WIDTH="50%" VALIGN="TOP"><ol>
+      <font FACE="Arial" SIZE="2">
+      <li>With the AC power OFF, set the MODE switch on the rear panel to MODE 2.</li>
+      <li>Set all 3 of the front dip switches to ON.</li>
+      <li>Press and hold key switches 5 &amp; 6 and switch ON the AC power.</font></li>
+    </ol>
+    </td>
+    <td WIDTH="50%" VALIGN="TOP"><font FACE="Arial" SIZE="2"><img
+    src="{img}dealers/engineering/4323%20front%20panel.gif" width="168" height="154"
+    alt="4323 front panel.gif (11083 bytes)" border="0"></font></td>
+  </tr>
+</table>
+<font FACE="Arial" SIZE="2">
+
+<p>The display will show the software version number, type and country setting followed by
+'Option'.</p>
+</font>
+
+<table CELLSPACING="0" BORDER="0" CELLPADDING="7" WIDTH="568">
+  <tr>
+    <td VALIGN="TOP"><font FACE="Arial" SIZE="2"><ul>
+      <li>Press switch 4 - Display shows OP-07</li>
+      <li>Press switch 1 - Display shows OP-07 4<br>
+        At this step 4mA will be output from the option card BNC socket. Measure the voltage with
+        a high impedance digital multimeter. The voltage at 4mA will be 2.000V</li>
+      <li>Press switch 2 - Display shows OP-07 20<br>
+        At this step 20mA will be output from the option card BNC socket. Measure the voltage as
+        above, this should be 10.000V</li>
+      <li>If the above voltages are not accurate, adjust R10 on the OP07 board (towards the rear
+        of the indicator) to achieve a difference of 8.000V between step 5 and step 6
+        measurements.</li>
+      <li>Adjust R11 so that the voltages are 2.000V at 4mA and 10.000V at 20mA, using switch 1
+        and switch 2 to toggle between the two current settings.</li>
+      </font>
+    </ul>
+    </td>
+  </tr>
+</table>
+<font FACE="Arial" SIZE="2"><b>
+
+<p>&nbsp;</p>
+</b>
+
+<p><b>Linearity Test</b></p>
+
+<p>After completing the adjustments check the linearity using the procedure below.
+
+<ol>
+  <li>Press Switch 3 or Switch 4 until the display shows OP-07 2.</li>
+  <li>Check the linearity in accordance with the table below, using Switch 3 to increase and
+    Switch 4 to reduce the current.<br>
+  </li>
+</ol>
+</font>
+
+<table BORDER="1" CELLSPACING="1" CELLPADDING="7" WIDTH="340">
+  <tr>
+    <td WIDTH="33%" VALIGN="TOP"><font FACE="Arial" SIZE="2"><b>Display</b><p>OP-07 2</p>
+    <p>OP-07 4</p>
+    <p>OP-07 8</p>
+    <p>OP-07 12</p>
+    <p>OP-07 16</p>
+    <p>OP-07 20</p>
+    <p>OP-07 22</font></td>
+    <td WIDTH="39%" VALIGN="TOP"><font FACE="Arial" SIZE="2"><b>Measurement</b><p>1.000V</p>
+    <p>2.000V</p>
+    <p>4.000V</p>
+    <p>6.000V</p>
+    <p>8.000V</p>
+    <p>10.000V</p>
+    <p>11.000V</font></td>
+    <td WIDTH="28%" VALIGN="TOP"><font FACE="Arial" SIZE="2"><b>Tolerance</b><p>+ / - 0.002</p>
+    <p>+ / - 0.002</p>
+    <p>+ / - 0.002</p>
+    <p>+ / - 0.002</p>
+    <p>+ / - 0.002</p>
+    <p>+ / - 0.002</p>
+    <p>+ / - 0.004</font></td>
+  </tr>
+</table>
+</div>
